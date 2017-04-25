@@ -66,7 +66,8 @@ body{
 	.navbar-default.navbar-shrink{background-color:#222;padding:10px 0}.navbar-default.navbar-shrink .navbar-brand{font-size:1.5em}}
 	
 	header{
-		background-image:none;
+		
+		
 		background-repeat:none;
 		background-attachment:scroll;
 		background-position:center center;
@@ -75,8 +76,15 @@ body{
 		background-size:cover;-o-background-size:cover;
 		text-align:center;color:#fff;
 		background-image:url('../img/banner.png');
+		background-attachment: fixed;
+		position: relative;
 	
-	}
+		
+		}
+	
+	
+
+	
 		
 	header .intro-text{padding-top:100px;
 	padding-bottom:50px}header .intro-text .intro-lead-in
@@ -89,7 +97,7 @@ body{
 	text-transform:uppercase;font-weight:700;font-size:50px;line-height:50px;margin-bottom:25px}
 	
 	
-	@media (min-width:768px){header .intro-text{padding-top:300px;padding-bottom:200px}
+	@media (min-width:768px){header .intro-text{padding-top:200px;padding-bottom:80px}
 	header .intro-text .intro-lead-in{font-family:"Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;font-style:italic;font-size:40px;line-height:40px;margin-bottom:25px}
 	
 	header .intro-text .intro-heading{font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -261,6 +269,7 @@ height:100%;
 background-image:url("../img/bg-tri-w.png");
 width:100%;
 height:100%;
+padding: 30px 30px;
 }
 
 .bg-dots{
@@ -293,8 +302,35 @@ height:100%;
 background-image:url("../img/bg-petals-blue.png");
 width:100%;
 height:100%;
-padding: 70px 100px;
+padding: 30px 50px;
+background-attachment: fixed;
+}
 
+.bg-bible{
+background-image:url("../img/bible.png");
+width:100%;
+height:100%;
+padding: 70px 100px;
+background-attachment: fixed;
+color:#eee;
+}
+
+
+.bg-blue{
+background-color:#3977a2;
+width:100%;
+height:100%;
+padding: 70px 20px;
+color:#fff;
+
+}
+
+.bg-trans{
+background-color:#3977a2;
+width:100%;
+height:100%;
+padding: 70px 20px;
+color:#fff;
 }
 
 .bg-esche{
@@ -317,6 +353,15 @@ background-image:url("../img/bg-footer.png");
 width:100%;
 height:100%;
 color:#fff;
+background-attachment: fixed;
+}
+
+.pic{
+opacity:0.7;
+}
+
+.pic:hover{
+opacity:1;
 }
 	
 	.well_plain{
@@ -328,6 +373,14 @@ color:#fff;
 	border-radius:4px;
 	-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.05);
 	box-shadow:inset 0 1px 1px rgba(0,0,0,.05)}
+	
+	
+	.well_trans{
+	
+	padding:10px 30px;
+	margin-bottom:20px;
+	background-color:transparent;
+	}
 	
 	
 	.well_white{
@@ -538,3 +591,6 @@ font-size: 55px;
 .item:nth-child(3) {
    
 }
+
+
+.
