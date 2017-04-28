@@ -7,6 +7,7 @@ body{
 	
 	
 	.text-white{color:#fff}
+	.text-semiwhite{color:#e8e8e8}
 	
 	a,
 	a:hover,a:focus,a:active,a.active{outline:0}
@@ -55,8 +56,8 @@ body{
 	.navbar-default .navbar-toggle:hover,.navbar-default .navbar-toggle:focus{background-color:#3977a2}
 	.navbar-default .nav li a{font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;text-transform:uppercase;font-weight:400;letter-spacing:1px;color:#fff}
 	.navbar-default .nav li a:hover,.navbar-default .nav li a:focus{color:#3977a2;outline:0}
-	.navbar-default .navbar-nav>.active>a{border-radius:0;color:#fff;background-color:#555555}
-	.navbar-default .navbar-nav>.active>a:hover,.navbar-default .navbar-nav>.active>a:focus{color:#fff;background-color:#37adff}
+	.navbar-default .navbar-nav>.active>a{border-radius:0;color:#37adff;background-color:transparent; border-bottom: thick; border-top: 0; border-left: 0;border-right: 0;border-style: solid}
+	.navbar-default .navbar-nav>.active>a:hover,.navbar-default .navbar-nav>.active>a:focus{color:#3977a2;background-color:transparent}
 	.navbar-default .navbar-nav>.disabled>a{color:#37adff;background-color:transparent; }
 	.navbar-default .navbar-nav>.disabled>a:hover,.navbar-default .navbar-nav>.disabled>a:focus{cursor: pointer; color:#fff;background-color:#37adff}
 	
@@ -259,11 +260,23 @@ min-width: 1366px;
 min-height:550px;	
 position:relative;
 }
+
+
+
 .bg-maze{
 background-image:url("../img/bg-maze-w.png");
 width:100%;
 height:100%;
+background-attachment: fixed;
 }
+
+.bg-gray{
+background-color:#f2f2f2;
+width:100%;
+height:100%;
+
+}
+
 
 .bg-tri{
 background-image:url("../img/bg-tri-w.png");
@@ -302,7 +315,7 @@ height:100%;
 background-image:url("../img/bg-petals-blue.png");
 width:100%;
 height:100%;
-padding: 30px 50px;
+padding: 80px 50px;
 background-attachment: fixed;
 }
 
@@ -385,14 +398,14 @@ opacity:1;
 	
 	.well_white{
 	min-height:20px;
-	padding:7px;
+	padding:5px;
 	margin-bottom:20px;
 	background-color:#fff;
 	border:1px solid #e3e3e3;
-	border-radius:4px;
-	-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.05);
-	box-shadow:inset 0 1px 1px rgba(0,0,0,.05)}
+	 box-shadow: 0.5px 0.5px 1px #888888;
+	opacity:0.8;
 	
+	}
 	
 	.well_white2{
 	min-height:20px;
@@ -427,7 +440,67 @@ opacity:1;
     height: auto;
 }
 
+	.preview{
+	float:right;
+	background-color:#bebebe;
+	text-decoration:none;
+	font-size:10px;
+	padding: 3px 5px;
+	}
+	
+	.preview:hover{
+	float:right;
+	background-color:#525252;
+	text-decoration:none;
+	}
+	
+	
+	
+	.cert{
+	
+	background-color:#f4f4f4;
+	text-decoration:none;
+	font-size:10px;
+	padding: 3px 5px;
+	border:solid 1px;
+	border-color:#cdcdcd;
+	}
+	
+	.cert:hover{
+	
+	background-color:#9b9b9b;
+	text-decoration:none;
+	color:#fff;
+	}
+	
+	
+	.showmore{
+	float:center;
+	background-color:transparent;
+	text-decoration:none;
+	font-size:18px;
+	padding: 10px 25px;
+	font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	text-transform:uppercase;
+	font-weight:700;
+	color:#525252;
+	border-color: #525252;
+	
+	}
+	
+	.showmore:hover{
+		text-decoration:none;
+		-webkit-animation:showmore 1s ;
+		animation: showmore 1s;
+		
+			}
 
+		@-webkit-keyframes showmore {
+		0%,100% {-webkit-transform: translateY(0);}
+		to {	background-color:#525252;
+		color: #fff;}
+		}
+	}
 
 .logo_margin{
 	
@@ -507,7 +580,15 @@ font-size: 55px;
 .button1:hover {
 	
 	
-	-webkit-transform: scale(1.1);
+	
+	-webkit-animation:button1 1s ;
+		animation: button1  1s;
+		
+			}
+
+		@-webkit-keyframes button1 {
+		0%{-webkit-transform: scale(1.1);}
+		100% {-webkit-transform: scale(1.2);}
 
 }
 		
@@ -593,4 +674,38 @@ font-size: 55px;
 }
 
 
-.
+header1{ 
+  padding: .5vw;
+  font-size: 0;
+  display: -ms-flexbox;
+  -ms-flex-wrap: wrap;
+  -ms-flex-direction: column;
+  -webkit-flex-flow: row wrap; 
+  flex-flow: row wrap; 
+  display: -webkit-box;
+  display: flex;
+  
+}
+header1 div { 
+  -webkit-box-flex: auto;
+  -ms-flex: auto;
+  flex: auto; 
+  width: 200px; 
+  margin: .5vw; 
+   
+}
+header1 div img { 
+  width: 100%; 
+  height: auto; 
+
+}
+.gallery{
+padding: .5vw;
+
+}
+
+@media screen and (max-width: 400px) {
+  header1 div { margin: .5vw; }
+  header1 { padding: 0; }
+  
+}
