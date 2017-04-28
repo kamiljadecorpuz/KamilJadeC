@@ -674,7 +674,7 @@ font-size: 55px;
 }
 
 
-header1{ 
+div.container_box{ 
   padding: .5vw;
   font-size: 0;
   display: -ms-flexbox;
@@ -686,7 +686,7 @@ header1{
   display: flex;
   
 }
-header1 div { 
+div.gallery_pics { 
   -webkit-box-flex: auto;
   -ms-flex: auto;
   flex: auto; 
@@ -694,7 +694,7 @@ header1 div {
   margin: .5vw; 
    
 }
-header1 div img { 
+div img { 
   width: 100%; 
   height: auto; 
 
