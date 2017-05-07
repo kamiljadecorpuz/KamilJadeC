@@ -246,7 +246,7 @@
 					</div>
 					<div class="col-lg-12">
 					<br>
-					<a href="#experience" class="page-scroll"><button class="btn showmore">Show experiences &nbsp;<span class="caret"></span></button></a>
+					<a href="#experience" onclick="showExpe()" class="page-scroll"><button class="btn showmore">Show experiences &nbsp;<span class="caret"></span></button></a>
 					</div>
 					<br><br><br>
 				</div>
@@ -268,8 +268,15 @@
 		
 		</div>
 		
+		<script>
+		var expe;
+		function showExpe(){
+			expe = document.getElementById("experience");
+			expe.hidden = false;
+			}
 		
-		<section id="experience" class="bg-white">
+		</script>
+		<section id="experience" class="bg-white" hidden>
 			
 				<div class="container">
 					<div class="row">
@@ -569,7 +576,7 @@
 				<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/VECTOR12.jpg"><div ><p>Illustration </p></div></div>
 				<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/VECTOR13.jpg"><div ><p>Illustration </p></div></div>
 				<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/VECTOR14.jpg"><div ><p>Illustration </p></div></div>
-				<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/VECTOR15.jpg"><div ><p>Illustration <a href="http://online.fliphtml5.com/rixe/jaae/" target="_blank" class="preview">Preview</a></p></div></div>
+				<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/VECTOR15.jpg"><div ><p>Illustration </p></div></div>
 				<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/PRINTS14.jpg"><div ><p>Illustration <a href="http://online.fliphtml5.com/rixe/jaae/" target="_blank" class="preview">Preview</a></p></div></div>
 				<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/PRINTS15.jpg"><div ><p>Graphic Design</p></div></div>
 				<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/PRINTS16.jpg"><div ><p>Graphic Design</p></div></div>
@@ -656,6 +663,8 @@
 				<h3 class="text-primary">Programming Language</h3>
 				<p class="text-semiwhite">Being able to use and understand different programming languages<br> is tough at first but cool once you're used to it. 
 				As long as you can adapt or shift from one language to another,<br> It will be a great advantage to anyone. </p>
+				<br><hr style="width:100px;height:4px;border:none;color:#fff;background-color:#fff;" /><br>
+				
 				<!--
 				
 			<div class="owl-carousel_1">
@@ -673,23 +682,11 @@
 								<div class="item img-responsive"><img src="img/icons/12.png"></div>
 				</div>
 				-->
-		
-		</section>
-			
-		
-		
-		<section id="programming1" class="alert">
-		<!-- <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a> -->
-		<br><br><br>
-			<div class="container">
 				
-						
-						<div class="row">
-							
-								
-								
-								<div class="col-lg-4 well_white2">
-								
+
+						<div class="container text-left">
+							<div class="row">
+								<div class="col-lg-4 well_trans">
 									<div class="col-lg-3">
 										<img src="img/icons/1.png"  height="70px">
 									</div>
@@ -705,8 +702,7 @@
 								</div>
 								
 								
-								<div class="col-lg-4 well_white2">
-								
+								<div class="col-lg-4 well_trans">
 									<div class="col-lg-3">
 										<img src="img/icons/2.png"  height="70px">
 									</div>
@@ -722,8 +718,7 @@
 								</div>
 								
 								
-								<div class="col-lg-4 well_white2">
-								
+								<div class="col-lg-4 well_trans">
 									<div class="col-lg-3">
 										<img src="img/icons/3.png"  height="70px">
 									</div>
@@ -738,8 +733,7 @@
 									</div>
 								</div>
 								
-									<div class="col-lg-4 well_white2">
-								
+									<div class="col-lg-4 well_trans">
 									<div class="col-lg-3">
 										<img src="img/icons/4.png"  height="70px">
 									</div>
@@ -755,8 +749,7 @@
 								</div>
 								
 								
-									<div class="col-lg-4 well_white2">
-								
+								<div class="col-lg-4 well_trans">
 									<div class="col-lg-3">
 										<img src="img/icons/5.png"  height="70px">
 									</div>
@@ -771,8 +764,7 @@
 									</div>
 								</div>
 								
-									<div class="col-lg-4 well_white2">
-								
+								<div class="col-lg-4 well_trans">
 									<div class="col-lg-3">
 										<img src="img/icons/6.png" height="70px">
 									</div>
@@ -787,8 +779,7 @@
 									</div>
 								</div>
 								
-									<div class="col-lg-4 well_white2">
-								
+								<div class="col-lg-4 well_trans">
 									<div class="col-lg-3">
 										<img src="img/icons/7.png"  height="70px">
 									</div>
@@ -804,8 +795,7 @@
 								</div>
 								
 								
-									<div class="col-lg-4 well_white2">
-								
+								<div class="col-lg-4 well_trans">
 									<div class="col-lg-3">
 										<img src="img/icons/8.png"  height="70px">
 									</div>
@@ -821,8 +811,7 @@
 								</div>
 								
 								
-									<div class="col-lg-4 well_white2">
-								
+								<div class="col-lg-4 well_trans">
 									<div class="col-lg-3">
 										<img src="img/icons/9.png"  height="70px">
 									</div>
@@ -837,10 +826,7 @@
 									</div>
 								</div>
 								
-								
-								
-									<div class="col-lg-4 well_white2">
-								
+								<div class="col-lg-4 well_trans">
 									<div class="col-lg-3">
 										<img src="img/icons/10.png"  height="70px">
 									</div>
@@ -855,11 +841,7 @@
 									</div>
 								</div>
 								
-								
-								
-								
-									<div class="col-lg-4 well_white2">
-							
+								<div class="col-lg-4 well_trans">
 									<div class="col-lg-3">
 										<img src="img/icons/11.png"  height="70px">
 									</div>
@@ -874,11 +856,7 @@
 									</div>
 								</div>
 								
-								
-								
-								
-									<div class="col-lg-4 well_white2">
-							
+								<div class="col-lg-4 well_trans">
 									<div class="col-lg-3">
 										<img src="img/icons/12.png"  height="70px">
 									</div>
@@ -893,14 +871,12 @@
 									</div>
 								</div>
 								
-						
+							</div>
 						</div>
-		
-						
-			</div>
-		</section>		
-		
-		
+
+		</section>
+			
+
 		<section id="programming_tools" class="bg-tri">
 			<div class="well_trans text-center">
 					
@@ -927,7 +903,12 @@
 					<div class="item img-responsive"><img src="img/icons/a13.png"><p class="text-muted">Unity</p></div>
 					<div class="item img-responsive"><img src="img/icons/a14.png"><p class="text-muted">Visual Basic</p></div>
 					<div class="item img-responsive"><img src="img/icons/a15.png"><p class="text-muted">Dream Weaver</p></div>
+					
 				</div>
+				
+				
+				
+				
 			</div>
 		</section>		
 		
@@ -1148,7 +1129,7 @@
 				<br>
 					<div class="well_trans">
 						<a href="#aboutme" class="page-scroll">ABOUT ME</a><br>
-                        <a href="#experience"  class="page-scroll">EXPERIENCES</a><br>
+                        <a href="#experience" onclick="showExpe()" class="page-scroll">EXPERIENCES</a><br>
                         <a href="#portfolio"  class="page-scroll">PORTFOLIO</a><br>
                         <a href="#programming"  class="page-scroll">PROGRAMMING LANGUAGES</a><br>
                         <a href="#programming_tools"  class="page-scroll">PROGRAMMING TOOLS</a><br>
@@ -1178,7 +1159,7 @@
 					<i class="fa fa-envelope"></i>&nbsp; kamiljadecorpuz@yahoo.com<br>
 					<i class="fa fa-phone"></i>&nbsp; 0926 - 319 - 7128 | (02) 618-5933
 					<br>
-					<span class="copyright  text-left" >Copyright &copy; Kamil Jade Corpuz 2016</span><br>
+					<span class="copyright  text-left" >Copyright &copy; All rights reserved KJC 2016</span><br>
 					</div>	
                 </div>
             </div>
