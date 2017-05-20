@@ -11,13 +11,14 @@ body{
 	
 	a,
 	a:hover,a:focus,a:active,a.active{outline:0}
-	a{color:#fff}a:hover,a:focus,a:active,a.active{color:#37adff}
+	a{color:#fff}a:hover,a:focus,a:active,a.active{color:#37adff; text-decoration:none;-webkit-transition:all .3s;-moz-transition:all .3s;transition:all .3s}
 	
 	h1,h2,h3,h4,h5,h6
 	{font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;text-transform:uppercase;font-weight:700}
 	
 	.img-centered{margin:0 auto}
-	.bg-light-gray{background-color:#f7f7f7}
+	.bg-light-gray{padding: 15px 25px; background-color:#f7f7f7;border-bottom: thick; border-top: 0; border-left: 0;border-right: 0;border-style: solid}
+	.bg-light-gray:hover{padding: 15px 25px; background-color:#f7f7f7;border-bottom: thick #3977a2; border-top: 0.1px #dadada; border-left: 0.1px #dadada;border-right: 0.1px #dadada;border-style: solid}
 	.bg-darkest-gray{background-color:#222}
 	.btn-primary{color:#fff;background-color:#3977a2;border-color:#3977a2;font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;text-transform:uppercase;font-weight:700}
 	.btn-primary:hover,
@@ -49,22 +50,22 @@ body{
 	.btn-xl:focus,.btn-xl.disabled:active,.btn-xl[disabled]:active,fieldset[disabled] .btn-xl:active,.btn-xl.disabled.active,
 	.btn-xl[disabled].active,fieldset[disabled] .btn-xl.active{background-color:#3977a2;border-color:#3977a2}
 	.btn-xl .badge{color:#3977a2;background-color:#fff}.navbar-default{background-color:#222;border-color:transparent}
-	.navbar-default .navbar-brand{color:#fff;font-family:"Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive}
+	.navbar-default .navbar-brand{color:#d1d1d1;font-family:"Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif}
 	.navbar-default .navbar-brand:hover,.navbar-default .navbar-brand:focus,.navbar-default .navbar-brand:active,
 	.navbar-default .navbar-brand.active{color:#37adff}.navbar-default .navbar-collapse{border-color:rgba(255,255,255,.02)}
 	.navbar-default .navbar-toggle{background-color:#3977a2;border-color:#3977a2}.navbar-default .navbar-toggle .icon-bar{background-color:#fff}
 	.navbar-default .navbar-toggle:hover,.navbar-default .navbar-toggle:focus{background-color:#3977a2}
-	.navbar-default .nav li a{font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;text-transform:uppercase;font-weight:400;letter-spacing:1px;color:#fff}
-	.navbar-default .nav li a:hover,.navbar-default .nav li a:focus{color:#3977a2;outline:0}
+	.navbar-default .nav li a{font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;text-transform:uppercase;font-weight:500;letter-spacing:1px;color:#d1d1d1}
+	.navbar-default .nav li a:hover,.navbar-default .nav li a:focus{color:#fff; -webkit-transition:all .3s;-moz-transition:all .3s;transition:all .3s}
 	.navbar-default .navbar-nav>.active>a{border-radius:0;color:#37adff;background-color:transparent; border-bottom: thick; border-top: 0; border-left: 0;border-right: 0;border-style: solid}
-	.navbar-default .navbar-nav>.active>a:hover,.navbar-default .navbar-nav>.active>a:focus{color:#3977a2;background-color:transparent}
+	.navbar-default .navbar-nav>.active>a:hover,.navbar-default .navbar-nav>.active>a:focus{color:#37adff;background-color:transparent}
 	.navbar-default .navbar-nav>.disabled>a{color:#37adff;background-color:transparent; }
 	.navbar-default .navbar-nav>.disabled>a:hover,.navbar-default .navbar-nav>.disabled>a:focus{cursor: pointer; color:#fff;background-color:#37adff}
 	
-	@media (min-width:768px){.navbar-default{background-color:transparent;padding:25px 0;-webkit-transition:padding .3s;-moz-transition:padding .3s;transition:padding .3s;border:0}
-	.navbar-default .navbar-brand{font-size:2em;-webkit-transition:all .3s;-moz-transition:all .3s;transition:all .3s}
+	@media (min-width:768px){.navbar-default{background-color:#3977a2; opacity: 0.7; padding:15px 0;-webkit-transition:padding .3s;-moz-transition:padding .3s;transition:padding .3s;border:0}
+	.navbar-default .navbar-brand{font-size:1.6em;-webkit-transition:all .3s;-moz-transition:all .3s;transition:all .3s}
 	.navbar-default .navbar-nav>.active>a{border-radius:3px}
-	.navbar-default.navbar-shrink{background-color:#222;padding:10px 0}.navbar-default.navbar-shrink .navbar-brand{font-size:1.5em}}
+	.navbar-default.navbar-shrink{background-color:#222;padding:5px 0; opacity: 1;}.navbar-default.navbar-shrink .navbar-brand{font-size:1.5em}}
 	
 	header{
 		
@@ -200,7 +201,7 @@ body{
 		ul.social-buttons{margin-bottom:0}
 		ul.social-buttons li a{display:block;background-color:transparent;height:40px;width:40px;border-radius:100%;font-size:20px;line-height:40px;color:#fff;outline:0;-webkit-transition:all .3s;-moz-transition:all .3s;transition:all .3s}
 		ul.social-buttons li a:hover,ul.social-buttons li a:focus,ul.social-buttons li a:active{background-color:#3977a2}
-		
+	
 		.btn:focus,.btn:active,.btn.active,.btn:active:focus{outline:0}
 		.portfolio-modal .modal-content{border-radius:0;background-clip:border-box;-webkit-box-shadow:none;box-shadow:none;border:0;min-height:100%;padding:100px 0;text-align:center}
 		.portfolio-modal .modal-content h2{margin-bottom:15px;font-size:3em}
@@ -345,6 +346,8 @@ height:100%;
 padding: 70px 20px;
 color:#fff;
 }
+
+
 
 .bg-esche{
 background-image:url("../img/bg-esche.png");
