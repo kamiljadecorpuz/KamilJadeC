@@ -1,0 +1,194 @@
+<div class="owl-carousel5">
+					
+								<div class="item cert">
+									<img src="img/certs/18.png" class="img-responsive" class="pic"  data-toggle="modal" data-target="#myModal" >
+									<div>
+										<p><br> 
+										3D Modeling<br> 
+										<small>EGlobio Trainings & Seminars</small>
+										</p>
+									</div>
+								</div>
+
+								<div class="item cert">
+									<img src="img/certs/1.png" class="img-responsive" class="pic"  data-toggle="modal" data-target="#myModal" >
+									<div>
+										<p><br> 
+										Blender Tutorial <br> 
+										<small>by Ms. Kamil Jade Corpuz</small>
+										</p>
+									</div>
+								</div>
+								
+								
+								<div class="item cert">
+									<img src="img/certs/2.png" class="img-responsive" class="pic"  data-toggle="modal" data-target="#myModal" >
+									<div>
+										<p><br> 
+										Vector & Vexel Art <br> 
+										<small>by Ms. Kamil Jade Corpuz</small>
+										</p>
+									</div>
+								</div>
+								
+								
+								
+								<div class="item cert">
+									<img src="img/certs/3.png" class="img-responsive" class="pic"  data-toggle="modal" data-target="#myModal" >
+									<div>
+										<p><br> 
+										Logo Making <br> 
+										<small>by Ms. Kamil Jade Corpuz</small>
+										</p>
+									</div>
+								</div>
+								
+								
+								<div class="item cert">
+									<img src="img/certs/4.png" class="img-responsive" class="pic"  data-toggle="modal" data-target="#myModal" >
+									<div>
+										<p><br> 
+										Infographics <br> 
+										<small>by Ms. Kamil Jade Corpuz</small>
+										</p>
+									</div>
+								</div>
+								
+								<div class="item cert">
+									<img src="img/certs/5.png" class="img-responsive" class="pic"  data-toggle="modal" data-target="#myModal" >
+									<div>
+										<p><br> 
+										Benefits<br> 
+										<small>by Ms. Kamil Jade Corpuz</small>
+										</p>
+									</div>
+								</div>
+								
+								<div class="item cert">
+									<img src="img/certs/6.png" class="img-responsive" class="pic"  data-toggle="modal" data-target="#myModal" >
+									<div>
+										<p><br> 
+										3GS vs. Wifi<br> 
+										<small>by Mr. harvey Octaviano</small>
+										</p>
+									</div>
+								</div>
+						
+								<div class="item cert">
+									<img src="img/certs/7.png" class="img-responsive" class="pic"  data-toggle="modal" data-target="#myModal" >
+									<div>
+										<p><br> 
+										Adobe After Effects<br> 
+										<small>by by Mr. harvey Octaviano</small>
+										</p>
+									</div>
+								</div>
+								
+								
+								<div class="item cert">
+									<img src="img/certs/8.png" class="img-responsive" class="pic"  data-toggle="modal" data-target="#myModal" >
+									<div>
+										<p><br> 
+										Adobe Premiere<br> 
+										<small>by by Mr. harvey Octaviano</small>
+										</p>
+									</div>
+								</div>
+								
+								<div class="item cert">
+									<img src="img/certs/9.png" class="img-responsive" class="pic"  data-toggle="modal" data-target="#myModal" >
+									<div>
+										<p><br> 
+										Adobe After Effects<br> 
+										<small>by Ms. Jestine Zulaybar</small>
+										</p>
+									</div>
+								</div>
+								
+								
+								<div class="item cert">
+									<img src="img/certs/10.png" class="img-responsive" class="pic"  data-toggle="modal" data-target="#myModal" >
+									<div>
+										<p><br> 
+										On the Job Training<br> 
+										<small>by Ms. Kamil Jade Corpuz</small>
+										</p>
+									</div>
+								</div>
+								
+								<div class="item cert">
+									<img src="img/certs/11.png" class="img-responsive" class="pic"  data-toggle="modal" data-target="#myModal" >
+									<div>
+										<p><br> 
+										Robotics using Arduino<br> 
+										<small>by Mr. Aljabri Alam</small>
+										</p>
+									</div>
+								</div>
+								
+								<div class="item cert">
+									<img src="img/certs/12.png" class="img-responsive" class="pic"  data-toggle="modal" data-target="#myModal" >
+									<div>
+										<p><br> 
+										Adobe Magic<br> 
+										<small>by Mr. Rollan Banez</small>
+										</p>
+									</div>
+								</div>
+								
+								<div class="item cert">
+									<img src="img/certs/13.png" class="img-responsive" class="pic"  data-toggle="modal" data-target="#myModal" >
+									<div>
+										<p><br> 
+										Android App Dev't<br> 
+										<small>by Mr. Erwin E. Globio</small>
+										</p>
+									</div>
+								</div>
+								
+								
+								<div class="item cert">
+									<img src="img/certs/14.png" class="img-responsive" class="pic"  data-toggle="modal" data-target="#myModal" >
+									<div>
+										<p><br> 
+										Big Data Analytics<br> 
+										<small>by Mr. Erwin E. Globio</small>
+										</p>
+									</div>
+								</div>
+								
+								<div class="item cert">
+									<img src="img/certs/15.png" class="img-responsive" class="pic"  data-toggle="modal" data-target="#myModal" >
+									<div>
+										<p><br> 
+										IT Interskills<br> 
+										<small>University of Caloocan City</small>
+										</p>
+									</div>
+								</div>
+								
+								<div class="item cert">
+									<img src="img/certs/16.png" class="img-responsive" class="pic"  data-toggle="modal" data-target="#myModal" >
+									<div>
+										<p><br> 
+										Best Popular Award<br> 
+										<small>University of Caloocan City</small>
+										</p>
+									</div>
+								</div>
+					
+								<div class="item cert">
+									<img src="img/certs/17.png" class="img-responsive" class="pic"  data-toggle="modal" data-target="#myModal" >
+									<div>
+										<p><br> 
+										IT Interskills<br> 
+										<small>University of Caloocan City</small>
+										</p>
+									</div>
+								</div>
+					
+								
+					
+					
+				
+					</div>

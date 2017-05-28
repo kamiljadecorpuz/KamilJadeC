@@ -40,14 +40,24 @@
 	<script type="text/javascript">
 			
 			
-								function port1(){
-							//	document.getElementById('tee').hidden = false; 
-							//	document.getElementById('print').hidden = true; 
-							//	document.getElementById('logo').hidden = true; 
-								document.getElementById('webdesigns').hidden = true; 
-								document.getElementById('illus').hidden = false; 
-							//	document.getElementById('3d').hidden = true; 
-								document.getElementById('system').hidden = true; 
+								function aboutMe(){
+								document.getElementById('aboutme').hidden = false; 
+								document.getElementById('experience').hidden = true; 
+								document.getElementById('portfolio').hidden = true; 
+								}
+								
+								
+								function experience(){
+								document.getElementById('aboutme').hidden = true; 
+								document.getElementById('experience').hidden = false; 
+								document.getElementById('portfolio').hidden = true; 
+								}
+								
+								
+								function portfolio(){
+								document.getElementById('aboutme').hidden = true; 
+								document.getElementById('experience').hidden = true; 
+								document.getElementById('portfolio').hidden = false; 
 								}
 								
 				
@@ -56,8 +66,21 @@
 			</script>
 </head>
 
-<body id="page-top" class="index">
+<body id="page-top" class="index" onload="myFunction()">
+<script>
+var myVar;
 
+function myFunction() {
+    myVar = setTimeout(showPage, 10000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").hidden = false;
+}
+</script>
+<div id="loader"></div>
+<div id="myDiv" hidden>
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
@@ -80,15 +103,15 @@
                     </li>
                   
 					<li>
-                        <a class="page-scroll" href="#aboutme">&nbsp;About me</a>
+                        <a class="page-scroll" href="#aboutme" onclick="aboutMe()">&nbsp;About</a>
                     </li>
 					
 					<li>
-                        <a class="page-scroll" href="#experience" onclick="showExpe()">&nbsp;Experiences</a>
+                        <a class="page-scroll" href="#experience" onclick="experience()">&nbsp;Experiences</a>
                     </li>
 					
 					<li>
-                        <a class="page-scroll" href="#portfolio">&nbsp;Portfolio</a>
+                        <a class="page-scroll" href="#portfolio" onclick="portfolio()">&nbsp;Portfolio</a>
                     </li>
                     
 					
@@ -106,11 +129,11 @@
 						  
 						  </li> 
 						</ul>
-					  </li> -->
+					  </li> 
 					
                     <li>
                         <a class="page-scroll" href="#certificates">&nbsp;Certificates</a>
-                    </li>
+                    </li>-->
 					
 					   
          <!-- 
@@ -146,22 +169,24 @@
 				</div>	
 				
 				
-				<div class="col-lg-6" hidden>
+				<div class="col-lg-6">
 					
                                <!-- <img class="img-circle img-responsive" align="right" src="img/about/3.jpg" alt=""> -->
-                           
+                          <br><br><br>
 						<div class=" text-left well_dark" >
-						<h4 class="service-heading" > &nbsp;&nbsp;Designer | Programmer | Developer</h4>
-						<p>&nbsp;&nbsp; <i class="fa fa-graduation-cap"></i>&nbsp; B.S. Computer Science 
-						<br>&nbsp;&nbsp; <i class="fa fa-building"></i>&nbsp; University of Caloocan City
-						<br>&nbsp;&nbsp; <i class="fa fa-envelope"></i>&nbsp; kamiljadecorpuz1404@gmail.com
-						<br>&nbsp;&nbsp; <i class="fa fa-phone"></i>&nbsp; 0926 - 319 - 7128 | (02) 618-5933
-						</p>
+						<p class="service-heading1" >Bachelor of Science in Computer Science</p>
+						<p class="service-subheading1">University of Caloocan City <br>South Campus,Metro Manila</p>
+						<hr>
+						<p class="service-heading1" >Electronics and Communication Engineering Technology</p>
+						<p class="service-subheading1">Mariano Quinto Alarilla Polytechnic College <br>Meycauayan, Bulacan</p>
+						<hr>
+						<a href="#contact" class="page-scroll btn btn-default"> Contact Me</a>
+						
 						</div>
 					
 					</div>
 						
-				<div class="col-lg-6 center">
+				<div class="col-lg-6 center" hidden>
 					<br><br><br>
 					<div class="owl-carousel3 text-center">
 						<div class="item img-responsive"><img src="img/system1.png" class=""></div>
@@ -198,16 +223,16 @@
     <!-- about me Section -->
   
        
-			
-		<section id="aboutme" class="bg-maze">
+	<div id="aboutme">
+		<section class="bg-maze">
 
 			<div class="container text-center">
 				<br>
 				<div class="row">
 					<div class="col-lg-3 well_trans">
 						
-						<span class="fa-stack fa-4x">
-							<i class="fa fa-circle fa-stack-2x text-primary"></i>
+						<span class="fa-stack fa-4x  text-dark">
+							<i class="fa fa-circle fa-stack-2x"></i>
 							<i class="fa fa-level-up fa-stack-1x fa-inverse"></i>
 						</span>
 						
@@ -217,8 +242,8 @@
 					</div>
 					
 					<div class="col-lg-3  well_trans">
-						<span class="fa-stack fa-4x">
-							<i class="fa fa-circle fa-stack-2x text-primary"></i>
+						<span class="fa-stack fa-4x text-dark">
+							<i class="fa fa-circle fa-stack-2x"></i>
 							<i class="fa fa-lightbulb-o fa-stack-1x fa-inverse"></i>
 						</span>
 						<h4 class="service-heading">My Creativity</h4>
@@ -227,8 +252,8 @@
 						
 					</div>
 					<div class="col-lg-3 well_trans">
-						<span class="fa-stack fa-4x">
-							<i class="fa fa-circle fa-stack-2x text-primary"></i>
+						<span class="fa-stack fa-4x text-dark">
+							<i class="fa fa-circle fa-stack-2x"></i>
 							<i class="fa fa-heart-o fa-stack-1x fa-inverse"></i>
 						</span>
 						<h4 class="service-heading">My Passion</h4>
@@ -237,8 +262,8 @@
 						
 					</div>
 					<div class="col-lg-3 well_trans">
-						<span class="fa-stack fa-4x">
-							<i class="fa fa-circle fa-stack-2x text-primary"></i>
+						<span class="fa-stack fa-4x text-dark">
+							<i class="fa fa-circle fa-stack-2x"></i>
 							<i class="fa fa-thumbs-o-up fa-stack-1x fa-inverse"></i>
 						</span>
 						<h4 class="service-heading">My Skills</h4>
@@ -255,11 +280,204 @@
 				
 			</div>
 		</section>
+		
+		<section>	
+		
+			<div class="container">	
+		
+			<div class="col-lg-8">	
+				<div class="col-lg-12 bg-story">
+					<a href="#mystory4" class="preview" data-toggle="collapse">View Story</a>
+					<div class="col-lg-3">
+						<img src="img/expe/ucc_logo.png">
+					</div>
+					<div class="col-lg-9">	
+						<p class="service-heading">Teaching at University of Caloocan City<br><small>November 16, 2016</small></p>
+						
+						<p class="text-muted">
+							Teaching is not just about discussions. It is also a technique on how people get your ideas.
+							It is not just giving grades to your students. While inside the room, what they have to learn/experience
+							is what matters most. You have to deal with different people everyday. 
+							<br><br>
+							Teaching needs patience. You have to clarify the things that they don't understand.
+							You have to repeat your lesson until they get it.
+							<br><br>
+							At the of the day, you'll feel that immeasureable happiness. You're seeing their smiles because they learned something from you.
+						
+						</p>
+						<div id="mystory4" class="collapse">
+							<div class="container_box">
+								<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" >
+								<img src="img/expe/class1.jpg">
+								</div>
+								<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" >
+								<img src="img/expe/class2.jpg">
+								</div>
+								<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" >
+								<img src="img/expe/class3.jpg">
+								</div>
+								<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" >
+								<img src="img/expe/class4.jpg">
+								</div>
+								<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" >
+								<img src="img/expe/class5.jpg">
+								</div>
+								<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" >
+								<img src="img/expe/class6.jpg">
+								</div>
+								<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" >
+								<img src="img/expe/class7.jpg">
+								</div>
+								<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" >
+								<img src="img/expe/class8.jpg">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- End of my Story -->
+				
+				<div class="col-lg-12 bg-story">
+					<a href="#mystory3" class="preview" data-toggle="collapse">View Story</a>
+					<div class="col-lg-3">
+						<img src="img/expe/csd_logo.jpg">
+					</div>
+					<div class="col-lg-9">	
+						<p class="service-heading">Thesis Exhibit 2016<br><small>February 7, 2016</small></p>
+						
+						<p class="text-muted">
+							In University of Caloocan City CSD, we are celebrating our Annual Thesis Exhibit.
+							All graduating students will show their theses to amaze our young students.
+							This exhibit shows the outcome of our sleepless nights, stragedy or gimick for the marketing of
+							our piece and how did we decide to come up with the idea.
+							
+						</p>
+						<div id="mystory3" class="collapse">
+							<div class="container_box">
+								<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" >
+								<img src="img/expe/ucc.jpg">
+								</div>
+								<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" >
+								<img src="img/expe/ucc1.jpg">
+								</div>
+								<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" >
+								<img src="img/expe/ucc5.jpg">
+								</div>
+								<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" >
+								<img src="img/expe/ucc4.jpg">
+								</div>
+								<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" >
+								<img src="img/expe/ucc2.jpg">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- End of my Story -->
+				
+				
+				<div class="col-lg-12 bg-story">
+					<a href="#mystory2" class="preview" data-toggle="collapse">View Story</a>
+					<div class="col-lg-3">
+						<img src="img/expe/dotweblabs_logo.jpg">
+					</div>
+					<div class="col-lg-9">	
+						<p class="service-heading">Dotweblabs Web Technologies<br><small>May 21, 2015</small></p>
+					
+						<p class="text-muted">
+							Here's my cool experience while spending our OJT with Dotweblabs. We are taking the tasks seriously.
+							We're having brainstorming, online meeting since we're homebase OJT students and remotely tasks.
+							I had a chance to improve my skills in web design and web development but before that ofcourse,
+							I also experienced tough situations where in I need to do the urgent task and doing self-study simultaneously.
+							Eventually, I was able to manage my time and learn how to prioritize tasks that were given to me.
+							
+						</p>
+						<div id="mystory2" class="collapse">
+							<div class="container_box">
+								<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" >
+								<img src="img/expe/dotweblabs.jpg">
+								</div>
+								<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" >
+								<img src="img/expe/dotweblabs2.jpg">
+								</div>
+								<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" >
+								<img src="img/expe/dotweblabs3.jpg">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- End of my Story -->
+				
+				<div class="col-lg-12 bg-story">
+					<a href="#mystory1" class="preview" data-toggle="collapse">View Story</a>
+					<div class="col-lg-3">
+						<img src="img/expe/mcdo_quirino.jpg">
+					</div>
+					<div class="col-lg-9">	
+						<p class="service-heading">McDonald's All Star Competition<br><small>October 30, 2012</small></p>
+					
+						<p class="text-muted">
+							I had the opportunity to participate in our Mcdonald's All Star Competition where every store has
+							their own participants for every field of expertise. I'm representing our store in Quirino Taft for Fries Competition.
+							Indeed, it was a great experience for me as a crew. I was very careful during that time. I had a down time but easily
+							caught up with the goal.
+						</p>
+						<div id="mystory1" class="collapse">
+							<div class="container_box">
+								<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" >
+								<img src="img/expe/mcdo_cert.jpg"> 
+								</div>
+								<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" >
+								<img src="img/expe/mcdo_quirino2.jpg"> 
+								</div>
+								<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" >
+								<img src="img/expe/mcdo_quirino3.jpg"> 
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- End of my Story -->
+				<br><br><br>
+			</div> <!-- End of Column Story-->
 			
-		<div class="bg-bible" hidden>
+			<div class="col-lg-4">
+				<div  class="well_white_links">
+					<a  href="https://mypersonality.info/kamiljadecorpuz/" target="_blank">
+						<p class="text-muted">My Personality Test Result</p>
+						<img src="img/header-mpi-logo.gif"> 
+					</a>
+				</div>
+				
+				<div  class="well_white_links">
+					<a  href="https://www.upwork.com/o/profiles/users/_~0178b3cc401418e7de/" target="_blank">
+						<p class="text-muted">Check me on Upwork</p>
+						<img src="img/Upwork.jpg"> 
+					</a>
+				</div>
+				
+				<div  class="well_white_links">
+					<a  href="https://trello.com/kamiljadecorpuz1" target="_blank">
+						<p class="text-muted">Remote Tasks on Trello</p>
+						<img src="img/trello.jpg"> 
+					</a>
+				</div>
+				
+				<div  class="well_white_links">
+					<a  href="https://www.facebook.com/kamscreativedesigns/" target="_blank">
+						<p class="text-muted">Kams Creative Designs</p>
+						<img src="img/Ads1.png"> 
+					</a>
+				</div>
+			
+			</div><!-- End of right Side -->
+		</div>
+	
+		<div class="bg-bible"hidden>
 		
 				
-					<div class="owl-carousel text-center">
+					<div class="owl-carousel3 text-center">
 		
 					<div class="item"><h2>I'm enough of an ARTIST to draw freely<br> upon my imagination</h2><p>- Albert Einstein	</p></div>
 					<div class="item"><h2>For God so loved the world that he gave his <br>one and only Son,<br> that whoever believes in him shall not perish<br> but have eternal life.</h2><p>- John 3:16</p></div>
@@ -270,95 +488,290 @@
 		
 		</div>
 		
-		<script>
-		var expe;
-		function showExpe(){
-			expe = document.getElementById("experience");
-			expe.hidden = false;
-			}
 		
-		</script>
-		<section id="experience" class="bg-white">
+		</div> 
+	</section>	
+		
+		
+	
+		<section id="experience" class="bg-white" hidden>
 			
 				<div class="container">
 					<div class="row">
-					
-					
-						<div class="col-lg-8">
-							<div class="col-lg-12  bg-light-gray">
+						<div class="col-lg-3">
+							<div class="col-lg-12 well_white2 ">
+								
+									<img src="img/id.png" class="item"/>
+									<br><br>
+									<h4 class="service-heading">Objectives</h4>
+									<p>To apply all the knowledge gained from previous experiences, 
+									to enhance my skills and decision making. Acquire more knowledge and to be tenured as well.
 									
+									</p>
+								
+							</div>
+						
+							<div><h4 class="service-heading">Awards & Certificates</h4></div>
+							
+							<div class="container_collapse">
+								<div class="col-lg-12  bg-cert">
+									<div class="col-lg-12" >
+										<a src="img/certs/18.png"  class="large" data-toggle="modal" data-target="#myModal">3D Modeling</a>
+										<small>EGlobio Trainings & Seminars</small>
+										
+									</div>
+								</div>
+								<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+								
+								<div class="col-lg-12  bg-cert">
+									<div class="col-lg-12" >
+										<a src="img/certs/17.png" class="large" data-toggle="modal" data-target="#myModal">IT Interskills 2014</a>
+										<small>University of Caloocan City</small>
+										
+									</div>
+								</div>
+								<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+								
+								
+								<div class="col-lg-12  bg-cert">
+									<div class="col-lg-12" >
+										<a src="img/certs/16.png"  class="large" data-toggle="modal" data-target="#myModal">Best Popular Thesis Award</a>
+										<small>University of Caloocan City</small>
+										
+									</div>
+								</div>
+								<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+								
+								<div class="col-lg-12  bg-cert">
+									<div class="col-lg-12" >
+										<a src="img/certs/15.png"  class="large" data-toggle="modal" data-target="#myModal">IT Interskills 2013</a>
+										<small>University of Caloocan City</small>
+										
+									</div>
+								</div>
+								<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+								
+								
+								<div class="col-lg-12  bg-cert">
+									<div class="col-lg-12" >
+										<a src="img/certs/14.png"  class="large" data-toggle="modal" data-target="#myModal">Big Data Analytics</a>
+										<small>by Mr. Erwin E. Globio</small>
+										
+									</div>
+								</div>
+								<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+								
+								<div class="col-lg-12  bg-cert">
+									<div class="col-lg-12" >
+										<a src="img/certs/13.png"  class="large" data-toggle="modal" data-target="#myModal">Android App Development</a>
+										<small>by Mr. Erwin E. Globio</small>
+										
+									</div>
+								</div>
+								<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+								
+								
+								<div class="col-lg-12  bg-cert">
+									<div class="col-lg-12" >
+										<a src="img/certs/12.png"  class="large" data-toggle="modal" data-target="#myModal">CC: Adobe Magic</a>
+										<small>by Mr. Rollan Banez </small>
+										
+									</div>
+								</div>
+								<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+								
+								<div class="col-lg-12  bg-cert">
+									<div class="col-lg-12" >
+										<a src="img/certs/11.png"  class="large" data-toggle="modal" data-target="#myModal">Robotics using Arduino</a>
+										<small>by Mr. Aljabri Alam</small>
+										
+									</div>
+								</div>
+								<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+								
+								
+								<div class="col-lg-12  bg-cert">
+									<div class="col-lg-12" >
+										<a src="img/certs/10.png"  class="large" data-toggle="modal" data-target="#myModal">On the Job Training</a>
+										<small>Dotweblabs Web Technologies</small>
+										
+									</div>
+								</div>
+								<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+							
+							
+								<div class="col-lg-12  bg-cert">
+									<div class="col-lg-12" >
+										<a src="img/certs/9.png"  class="large" data-toggle="modal" data-target="#myModal">Adobe After Effects</a>
+										<small>by Ms. Jestine Zulaybar</small>
+										
+									</div>
+								</div>
+								<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+								
+								
+								<div class="col-lg-12  bg-cert">
+									<div class="col-lg-12" >
+										<a src="img/certs/8.png"  class="large" data-toggle="modal" data-target="#myModal">Adobe Premiere</a>
+										<small>by by Mr. harvey Octaviano</small>
+										
+									</div>
+								</div>
+								<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+								
+								
+								<div class="col-lg-12  bg-cert">
+									<div class="col-lg-12" >
+										<a src="img/certs/7.png"  class="large" data-toggle="modal" data-target="#myModal">Adobe After Effects</a>
+										<small>by Mr. harvey Octaviano</small>
+										
+									</div>
+								</div>
+								<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+								
+								<div class="col-lg-12  bg-cert">
+									<div class="col-lg-12" >
+										<a src="img/certs/6.png"  class="large" data-toggle="modal" data-target="#myModal">3GS vs. Wifi</a>
+										<small>by Mr. harvey Octaviano</small>
+										
+									</div>
+								</div>
+								<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+								
+								
+								<div class="col-lg-12  bg-cert">
+									<div class="col-lg-12" >
+										<a src="img/certs/5.png"  class="large" data-toggle="modal" data-target="#myModal">Benefits of Being a Graphic Designer</a>
+										<small>by Ms. Kamil Jade Corpuz</small>
+										
+									</div>
+								</div>
+								<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+								
+								<div class="col-lg-12  bg-cert">
+									<div class="col-lg-12" >
+										<a src="img/certs/4.png"  class="large" data-toggle="modal" data-target="#myModal">Infographics</a>
+										<small>by Ms. Kamil Jade Corpuz</small>
+										
+									</div>
+								</div>
+								<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+								
+								<div class="col-lg-12  bg-cert">
+									<div class="col-lg-12" >
+										<a src="img/certs/3.png"  class="large" data-toggle="modal" data-target="#myModal">Logo Making </a>
+										<small>by Ms. Kamil Jade Corpuz</small>
+										
+									</div>
+								</div>
+								<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+								
+								<div class="col-lg-12  bg-cert">
+									<div class="col-lg-12" >
+										<a src="img/certs/2.png"  class="large" data-toggle="modal" data-target="#myModal">Vector & Vexel Art</a>
+										<small>by Ms. Kamil Jade Corpuz</small>
+										
+									</div>
+								</div>
+								<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+								
+								
+								<div class="col-lg-12  bg-cert">
+									<div class="col-lg-12" >
+										<a src="img/certs/1.png"  class="large" data-toggle="modal" data-target="#myModal">Blender Tutorial</a>
+										<small>by Ms. Kamil Jade Corpuz</small>
+										
+									</div>
+								</div>
+								<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+								
+							</div>	<!-- end of column1 Certificates Section-->
+							<br><br><br>
+						</div>
+						<div class="col-lg-6">
+							<div class="col-lg-12  bg-light-gray ">
+									<a href="#12" class="showinfo" data-toggle="collapse"><i class="fa fa-info-circle"></i></a>
 									<h4 class="service-heading">Freelance Graphic Artist</h4>
 									<small class="">Remote | Home-based <br>
 									Kams Creative Designs 
 									</small>
-									<br><br>
-									<p class="text-muted">
-									<i class="fa fa-check"></i> Creating Logos <br>
-									<i class="fa fa-check"></i> Web Design <br> 
-									<i class="fa fa-check"></i> Web Development <br> 
-									<i class="fa fa-check"></i> Game Design & Development <br> 
-									<i class="fa fa-check"></i> Brochures and Magazine etc. 
-									</p>
+									<br>
+									
+									<div  id="12" class="collapse">
+										<p class="text-muted">
+										<i class="fa fa-check"></i> Creating Logos <br>
+										<i class="fa fa-check"></i> Web Design <br> 
+										<i class="fa fa-check"></i> Web Development <br> 
+										<i class="fa fa-check"></i> Game Design & Development <br> 
+										<i class="fa fa-check"></i> Brochures and Magazine etc. 
+										</p>
 								
+									</div>
 							</div>
 							
 							
 							
 					
 							<div class="col-lg-12  bg-light-gray">
-								
+									<a href="#11" class="showinfo" data-toggle="collapse"><i class="fa fa-info-circle"></i></a>
 									<h4 class="service-heading">College I.T. Professor</h4>
 									<small class="">University of Caloocan City <br>
 									Biglang Awa St., Edsa Caloocan City, Metro Manila	<br>
 									November 16, 2016 - to present
 									</small>
-									<br><br>
-									<p class="text-muted">
-									I'm teaching different subjects for every I.T Course in Computer Studies Department. 
-									Currently handling a Multimedia club that enhance students capabilities.<br><br>
-									Teaching Load/Subjects: <br>
-									<i class="fa fa-check"></i> Java Programming <br>
-									<i class="fa fa-check"></i> Operating System <br>
-									<i class="fa fa-check"></i> Advance Database System <br>
-									<i class="fa fa-check"></i> Intro to Computer Application <br>
-									<i class="fa fa-check"></i> Computer Graphics <br>
-									<i class="fa fa-check"></i> Game Programming <br>
-									<i class="fa fa-check"></i> Usability, HCI, UI, Design
-									</p>
-								
+									<br>
+									
+									<div  id="11" class="collapse">
+										<p class="text-muted">
+										I'm teaching different subjects for every I.T Course in Computer Studies Department. 
+										Currently handling a Multimedia club that enhance students capabilities.<br><br>
+										Teaching Load/Subjects: <br>
+										<i class="fa fa-check"></i> Java Programming <br>
+										<i class="fa fa-check"></i> Operating System <br>
+										<i class="fa fa-check"></i> Advance Database System <br>
+										<i class="fa fa-check"></i> Intro to Computer Application <br>
+										<i class="fa fa-check"></i> Computer Graphics <br>
+										<i class="fa fa-check"></i> Game Programming <br>
+										<i class="fa fa-check"></i> Usability, HCI, UI, Design
+										</p>
+									</div>
 							</div>
 
 						
 							<div class="col-lg-12  bg-light-gray">
-								
+									<a href="#10" class="showinfo" data-toggle="collapse"><i class="fa fa-info-circle"></i></a>
 									<h4 class="service-heading">Associate ICT Teacher</h4>
 									<small class="">STI College Caloocan <br>
 									June 6, 2016 - October 5, 2016
 									</small>
-									<br><br>
-									<p class="text-muted">
-									I'm teaching ICT Students and Non- ICT Students<br><br>
-									Teaching Load/Subjects: <br>
-									<i class="fa fa-check"></i> Java Programming <br>
-									<i class="fa fa-check"></i> Media and Information Literacy
-									</p>
-
+									<br>
+									
+									<div  id="10" class="collapse">
+										<p class="text-muted">
+										I'm teaching ICT Students and Non- ICT Students<br><br>
+										Teaching Load/Subjects: <br>
+										<i class="fa fa-check"></i> Java Programming <br>
+										<i class="fa fa-check"></i> Media and Information Literacy
+										</p>
+									</div>
+					
 							</div>
 
 						
 							
 							<div class="col-lg-12  bg-light-gray">
-								
+									<a href="#9" class="showinfo" data-toggle="collapse"><i class="fa fa-info-circle"></i></a>
 									<h4 class="service-heading">Web Developer/3D Modeler</h4>
 									<small class="">GarageFarm.NET Render Farm<br>
 									1702 Condo Unit, Paranaque <br>
 									April 3, 2016 - May 17, 2016
 									</small>
-									<br><br>
-									<p class="text-muted">
-									Created a Logo, Web Design mockups, Web Development, improving my logic skills through coursera
-									</p>
-								
+									<br>
+									<div  id="9" class="collapse">
+										<p class="text-muted">
+										Created a Logo, Web Design mockups, Web Development, improving my logic skills through coursera
+										</p>
+									</div>
 							</div>
 
 							
@@ -366,480 +779,216 @@
 									
 								
 							<div class="col-lg-12  bg-light-gray">
-								
+									<a href="#8" class="showinfo" data-toggle="collapse"><i class="fa fa-info-circle"></i></a>
 									<h4 class="service-heading">Freelance Video Editor</h4>
 									<small class="">Coachibs<br>
 									April 15 2016 - April 22, 2016
 									</small>
-									<br><br>
-									<p class="text-muted">
-									Compiled pictures from previous activities of their client, edited and compiled the videos. Added some animations and transitions.
-									</p>
+									<br>
+									<div  id="8" class="collapse">
+										<p class="text-muted">
+										Compiled pictures from previous activities of their client, edited and compiled the videos. Added some animations and transitions.
+										</p>
 							
+									</div>
 							</div>
 							
 							
 							
 							<div class="col-lg-12  bg-light-gray">
-								
+									<a href="#7" class="showinfo" data-toggle="collapse"><i class="fa fa-info-circle"></i></a>
 									<h4 class="service-heading">Layout Designer</h4>
 									<small class="">DMCJ Graphic Center<br>
 									232 Juan Luna, Binondo, Metro Manila <br>
 									March 17, 2016 - March 31, 2016
 									</small>
-									<br><br>
-									<p class="text-muted">
-									Created a newsletter from cover to back cover. Responsible for the layout and content designs and graphics.
-									</p>
+									<br>
+									
+									<div  id="7" class="collapse">
+										<p class="text-muted">
+										Created a newsletter from cover to back cover. Responsible for the layout and content designs and graphics.
+										</p>
 						
+									</div>
 							</div>
 
 							
 						
 							<div class="col-lg-12  bg-light-gray">
-								
+									<a href="#6" class="showinfo" data-toggle="collapse"><i class="fa fa-info-circle"></i></a>
 									<h4 class="service-heading">Freelance Graphic Designer</h4>
 									<small class="">GarageFarm.NET Render Farm<br>
 									December 1, 2015
 									</small>
-									<br><br>
-									<p class="text-muted">
-									Edited a flyer/leaflet for the company. Removing and adjusting of contents base on my client's idea. This is an impromptu and not a homebase work.
-									</p>
+									<br>
+									<div  id="6" class="collapse">
+										<p class="text-muted">
+										Edited a flyer/leaflet for the company. Removing and adjusting of contents base on my client's idea. This is an impromptu and not a homebase work.
+										</p>
 							
+									</div>
 							</div>
 
 							
 							<div class="col-lg-12  bg-light-gray">
-								
+									<a href="#5" class="showinfo" data-toggle="collapse"><i class="fa fa-info-circle"></i></a>
 									<h4 class="service-heading">OJT Web & Graphic Designer</h4>
 									<small class="">Dotweblabs Web Technologies<br>
 									Gen. Trias Cavite <br>
 									May 5, 2015 - July 26, 2015
 									</small>
-									<br><br>
-									<p class="text-muted">
-									Created a Logo, Web Design mockups, Web Development, we help our clients to create a website for them. 
-									Responisble for graphic materials, UI and UX.
-									</p>
-								
+									<br>
+									<div  id="5" class="collapse">
+										<p class="text-muted">
+										Created a Logo, Web Design mockups, Web Development, we help our clients to create a website for them. 
+										Responisble for graphic materials, UI and UX.
+										</p>
+									
+									</div>
 							</div>
 							
 							
 							<div class="col-lg-12  bg-light-gray">
-								
+									<a href="#4" class="showinfo" data-toggle="collapse"><i class="fa fa-info-circle"></i></a>
 									<h4 class="service-heading">Part time Layout Designer</h4>
 									<small class="">Aidalin Press Inc.<br>
 									Kabulusan 1 Street, Caloocan City<br>
 									July 12, 2013 - November 30, 2013
 									</small>
-									<br><br>
-									<p class="text-muted">
-									Scanning and editing of documents. I was assigned to check confidential files, create receipts and edit the contents etc.
-									</p>
+									<br>
+									<div  id="4" class="collapse">
+										<p class="text-muted">
+										Scanning and editing of documents. I was assigned to check confidential files, create receipts and edit the contents etc.
+										</p>
 								
+									</div>
 							</div>
 							
 							
 							<div class="col-lg-12  bg-light-gray">
-								
+									<a href="#3" class="showinfo" data-toggle="collapse"><i class="fa fa-info-circle"></i></a>
 									<h4 class="service-heading">Service Crew</h4>
 									<small class="">Golden Arches Development Inc.<br>
 									Pres. Quirino Ave., cor. San Andres St. Malate, Manila<br>
 									February 6, 2012 - June 5, 2013
 									</small>
-									<br><br>
-									<p class="text-muted">
-									Had experience as an assembler, counter person, fry and lobby person. Flexible with different tasks given within the day.
-									</p>
+									<br>
+									<div  id="3" class="collapse">
+										<p class="text-muted">
+										Had experience as an assembler, counter person, fry and lobby person. Flexible with different tasks given within the day.
+										</p>
 							
+									</div>
 							</div>
 							
 							
 							<div class="col-lg-12  bg-light-gray">
-								
+									<a href="#2" class="showinfo" data-toggle="collapse"><i class="fa fa-info-circle"></i></a>
 									<h4 class="service-heading">Service Crew</h4>
 									<small class="">Franchising McDLC Seafood's Inc.<br>
 									McDonald's SM City Marilao, Ibayo Marilao, Bulacan<br>
 									May 16, 2011 - January 5, 2012
 									</small>
-									<br><br>
-									<p class="text-muted">
-									Had experience as a fry and lobby person. I was assigned as spagetti person, gravy person, rice person, and buns & grill person.
-									</p>
-								
+									<br>
+									<div  id="2" class="collapse">
+										<p class="text-muted">
+										Had experience as a fry and lobby person. I was assigned as spagetti person, gravy person, rice person, and buns & grill person.
+										</p>
+									
+									</div>
 							</div>
 							
 							<div class="col-lg-12  bg-light-gray">
-								
+									<a href="#1" class="showinfo" data-toggle="collapse"><i class="fa fa-info-circle"></i></a>
 									<h4 class="service-heading">Sales Lady</h4>
 									<small class="">Miani's School and Office Supplies<br>
 									1121 San Andres St. Malate, Manila<br>
 									April 7, 2010 - April 23, 2011
 									</small>
-									<br><br>
-									<p class="text-muted">
-									Responsible for the sales/marketing strategy. Maintaining the cleanliness of the store as well as the items/products.
-									</p>
+									<br>
+									<div  id="1" class="collapse">
+										<p class="text-muted">
+										Responsible for the sales/marketing strategy. Maintaining the cleanliness of the store as well as the items/products.
+										</p>
 								
+									</div>
 							</div>
-						</div>
+							<br><br><br>
+						</div><!-- end of column 2 Experience Section-->
 						
-						<div class="col-lg-4">						
-								<div class="col-lg-12">
-								
-								<h4 class="service-heading">PROGRAMMING SKILLS</h4>
-								</div>	
+							<div class="col-lg-3 ">	
 						
 									<div class="col-lg-12">
-										<p class="text-muted">Javascript</p>
-										<div class="progress">
-										  <div class="progress-bar  progress-bar-striped active" role="progressbar" aria-valuenow="50"
-										  aria-valuemin="0" aria-valuemax="100" style="width:70%">
-											
-										  </div>
-										</div>
-									</div>
-							
-								
-					
-									<div class="col-lg-12">
-										<p class="text-muted">Bootstrap</p>
-										<div class="progress">
-										  <div class="progress-bar  progress-bar-striped active" role="progressbar" aria-valuenow="50"
-										  aria-valuemin="0" aria-valuemax="100" style="width:65%">
+										<h4 class="service-heading"> PROGRAMMING SKILLS</h4>
+										<p class="text-muted">
+										You may now a lot of programming language but being able to use it is when you can call it skill.
+										</p>
+										<!-- <a href="#progskills" class="readmore" data-toggle="collapse">Show >></a> -->
 										
-										  </div>
-										</div>
-									</div>
-
-									<div class="col-lg-12">
-										<p class="text-muted">C Sharp</p>
-										<div class="progress">
-										  <div class="progress-bar  progress-bar-striped active" role="progressbar" aria-valuenow="50"
-										  aria-valuemin="0" aria-valuemax="100" style="width:70%">
-											
-										  </div>
-										</div>
-									</div>
-						
-								
-									<div class="col-lg-12">
-										<p class="text-muted">MySql</p>
-										<div class="progress">
-										  <div class="progress-bar  progress-bar-striped active" role="progressbar" aria-valuenow="50"
-										  aria-valuemin="0" aria-valuemax="100" style="width:60%">
-											
-										  </div>
-										</div>
-									</div>
-
-									<div class="col-lg-12">
-										<p class="text-muted">Cascading Style Sheet</p>
-										<div class="progress">
-										  <div class="progress-bar  progress-bar-striped active" role="progressbar" aria-valuenow="50"
-										  aria-valuemin="0" aria-valuemax="100" style="width:70%">
-											
-										  </div>
-										</div>
-									</div>
-
-									<div class="col-lg-12">
-										<p class="text-muted">Visual Basic</p>
-										<div class="progress">
-										  <div class="progress-bar  progress-bar-striped active" role="progressbar" aria-valuenow="50"
-										  aria-valuemin="0" aria-valuemax="100" style="width:70%">
-											
-										  </div>
-										</div>
-									</div>
-
-									<div class="col-lg-12">
-										<p class="text-muted">Java Programming</p>
-										<div class="progress">
-										  <div class="progress-bar  progress-bar-striped active" role="progressbar" aria-valuenow="50"
-										  aria-valuemin="0" aria-valuemax="100" style="width:60%">
-											
-										  </div>
-										</div>
-									</div>
-	
-									<div class="col-lg-12">
-										<p class="text-muted">Hypertext Preprocessor</p>
-										<div class="progress">
-										  <div class="progress-bar  progress-bar-striped active" role="progressbar" aria-valuenow="50"
-										  aria-valuemin="0" aria-valuemax="100" style="width:60%">
-											
-										  </div>
-										</div>
-									</div>
-
-									<div class="col-lg-12">
-										<p class="text-muted">C Programming</p>
-										<div class="progress">
-										  <div class="progress-bar  progress-bar-striped active" role="progressbar" aria-valuenow="50"
-										  aria-valuemin="0" aria-valuemax="100" style="width:60%">
-											
-										  </div>
-										</div>
-									</div>
-
-									<div class="col-lg-12">
-										<p class="text-muted">HTML5</p>
-										<div class="progress">
-										  <div class="progress-bar  progress-bar-striped active" role="progressbar" aria-valuenow="50"
-										  aria-valuemin="0" aria-valuemax="100" style="width:75%">
-											
-										  </div>
-										</div>
-									</div>
-
-									<div class="col-lg-12">
-										<p class="text-muted">UIKIT</p>
-										<div class="progress">
-										  <div class="progress-bar  progress-bar-striped active" role="progressbar" aria-valuenow="50"
-										  aria-valuemin="0" aria-valuemax="100" style="width:60%">
-											
-										  </div>
-										</div>
-									</div>
-
-									<div class="col-lg-12">
-										<p class="text-muted">Ruby on Rails</p>
-										<div class="progress">
-										  <div class="progress-bar  progress-bar-striped active" role="progressbar" aria-valuenow="50"
-										  aria-valuemin="0" aria-valuemax="100" style="width:60%">
-											
-										  </div>
-										</div>
-									</div>
-								<div class="col-lg-12">
-								<br><br>
-								<h4 class="service-heading">TOOLS / SOFTWARE APPLICATIONS</h4>
-								</div>	
-						
-									<div class="col-lg-12">
-										<p class="text-muted">Adobe Indesign</p>
-										<div class="progress">
-										  <div class="progress-bar  progress-bar-striped active" role="progressbar" aria-valuenow="50"
-										  aria-valuemin="0" aria-valuemax="100" style="width:75%">
-											
-										  </div>
-										</div>
-									</div>	
-									
-									<div class="col-lg-12">
-										<p class="text-muted">Adobe Photoshop</p>
-										<div class="progress">
-										  <div class="progress-bar  progress-bar-striped active" role="progressbar" aria-valuenow="50"
-										  aria-valuemin="0" aria-valuemax="100" style="width:85%">
-											
-										  </div>
-										</div>
-									</div>	
-									
-									<div class="col-lg-12">
-										<p class="text-muted">Adobe Ilustrator</p>
-										<div class="progress">
-										  <div class="progress-bar  progress-bar-striped active" role="progressbar" aria-valuenow="50"
-										  aria-valuemin="0" aria-valuemax="100" style="width:80%">
-											
-										  </div>
-										</div>
-									</div>
-
-									<div class="col-lg-12">
-										<p class="text-muted">Adobe After Effects</p>
-										<div class="progress">
-										  <div class="progress-bar  progress-bar-striped active" role="progressbar" aria-valuenow="50"
-										  aria-valuemin="0" aria-valuemax="100" style="width:35%">
-											
-										  </div>
-										</div>
-									</div>			
-
-									<div class="col-lg-12">
-										<p class="text-muted">Adobe Premiere</p>
-										<div class="progress">
-										  <div class="progress-bar  progress-bar-striped active" role="progressbar" aria-valuenow="50"
-										  aria-valuemin="0" aria-valuemax="100" style="width:35%">
-											
-										  </div>
-										</div>
-									</div>		
-									
-									<div class="col-lg-12">
-										<p class="text-muted">Adobe Dreamweaver</p>
-										<div class="progress">
-										  <div class="progress-bar  progress-bar-striped active" role="progressbar" aria-valuenow="50"
-										  aria-valuemin="0" aria-valuemax="100" style="width:50%">
-											
-										  </div>
-										</div>
-									</div>		
-									
-									<div class="col-lg-12">
-										<p class="text-muted">Autodesk 3Ds Max</p>
-										<div class="progress">
-										  <div class="progress-bar  progress-bar-striped active" role="progressbar" aria-valuenow="50"
-										  aria-valuemin="0" aria-valuemax="100" style="width:45%">
-											
-										  </div>
-										</div>
-									</div>	
-									
-									<div class="col-lg-12">
-										<p class="text-muted">Blender</p>
-										<div class="progress">
-										  <div class="progress-bar  progress-bar-striped active" role="progressbar" aria-valuenow="50"
-										  aria-valuemin="0" aria-valuemax="100" style="width:85%">
-											
-										  </div>
-										</div>
-									</div>	
-									
-									<div class="col-lg-12">
-										<p class="text-muted">Sketch Up</p>
-										<div class="progress">
-										  <div class="progress-bar  progress-bar-striped active" role="progressbar" aria-valuenow="50"
-										  aria-valuemin="0" aria-valuemax="100" style="width:45%">
-											
-										  </div>
-										</div>
-									</div>	
-									
-									<div class="col-lg-12">
-										<p class="text-muted">Unity</p>
-										<div class="progress">
-										  <div class="progress-bar  progress-bar-striped active" role="progressbar" aria-valuenow="50"
-										  aria-valuemin="0" aria-valuemax="100" style="width:90%">
-											
-										  </div>
-										</div>
-									</div>	
-									
-									<div class="col-lg-12">
-										<p class="text-muted">Xampp</p>
-										<div class="progress">
-										  <div class="progress-bar  progress-bar-striped active" role="progressbar" aria-valuenow="50"
-										  aria-valuemin="0" aria-valuemax="100" style="width:80%">
-											
-										  </div>
-										</div>
-									</div>	
-									
-									<div class="col-lg-12">
-										<p class="text-muted">Visual Studio</p>
-										<div class="progress">
-										  <div class="progress-bar  progress-bar-striped active" role="progressbar" aria-valuenow="50"
-										  aria-valuemin="0" aria-valuemax="100" style="width:80%">
-											
-										  </div>
-										</div>
-									</div>	
-									
-									<div class="col-lg-12">
-										<p class="text-muted">Visual Basic</p>
-										<div class="progress">
-										  <div class="progress-bar  progress-bar-striped active" role="progressbar" aria-valuenow="50"
-										  aria-valuemin="0" aria-valuemax="100" style="width:75%">
-											
-										  </div>
-										</div>
-									</div>	
-									
-									
-									
-									<div class="col-lg-12">
-										<p class="text-muted">Git</p>
-										<div class="progress">
-										  <div class="progress-bar  progress-bar-striped active" role="progressbar" aria-valuenow="50"
-										  aria-valuemin="0" aria-valuemax="100" style="width:60%">
-											
-										  </div>
-										</div>
-									</div>	
-									
-									<div class="col-lg-12">
-										<p class="text-muted">Ruby Stack</p>
-										<div class="progress">
-										  <div class="progress-bar  progress-bar-striped active" role="progressbar" aria-valuenow="50"
-										  aria-valuemin="0" aria-valuemax="100" style="width:50%">
-											
-										  </div>
-										</div>
-									</div>	
-									
-									<div class="col-lg-12">
-										<p class="text-muted">Webstorm</p>
-										<div class="progress">
-										  <div class="progress-bar  progress-bar-striped active" role="progressbar" aria-valuenow="50"
-										  aria-valuemin="0" aria-valuemax="100" style="width:60%">
-											
-										  </div>
-										</div>
-									</div>	
-									
-									<div class="col-lg-12">
-										<p class="text-muted">Github Application</p>
-										<div class="progress">
-										  <div class="progress-bar  progress-bar-striped active" role="progressbar" aria-valuenow="50"
-										  aria-valuemin="0" aria-valuemax="100" style="width:80%">
-											
-										  </div>
-										</div>
-									</div>	
-									
-									<div class="col-lg-12">
-										<p class="text-muted">Microsoft Word</p>
-										<div class="progress">
-										  <div class="progress-bar  progress-bar-striped active" role="progressbar" aria-valuenow="50"
-										  aria-valuemin="0" aria-valuemax="100" style="width:95%">
-											
-										  </div>
-										</div>
-									</div>	
-									
-									
-									<div class="col-lg-12">
-										<p class="text-muted">Microsoft Excel</p>
-										<div class="progress">
-										  <div class="progress-bar  progress-bar-striped active" role="progressbar" aria-valuenow="50"
-										  aria-valuemin="0" aria-valuemax="100" style="width:85%">
-											
-										  </div>
-										</div>
-									</div>	
-									
-									<div class="col-lg-12">
-										<p class="text-muted">Microsoft Power Point</p>
-										<div class="progress">
-										  <div class="progress-bar  progress-bar-striped active" role="progressbar" aria-valuenow="50"
-										  aria-valuemin="0" aria-valuemax="100" style="width:85%">
-											
-										  </div>
-										</div>
-									</div>	
-									
-									<div class="col-lg-12">
-										<p class="text-muted">Microsoft Access</p>
-										<div class="progress">
-										  <div class="progress-bar  progress-bar-striped active" role="progressbar" aria-valuenow="50"
-										  aria-valuemin="0" aria-valuemax="100" style="width:75%">
-											
-										  </div>
-										</div>
 									</div>	
 								
-								</div>
+									<div id="progskills">
+										
+										<div class="col-lg-12">
+											<p class="large">Game Development</p>
+											<div class="progress">
+												<div class="progress-bar" role="progressbar" aria-valuenow="70"
+												aria-valuemin="0" aria-valuemax="100" style="width:80%">
+												<span class="sr-only">80% Complete</span>
+												</div>
+											</div>
+										</div>
+										
+										
+										<div class="col-lg-12">
+											<p class="large">Web Development</p>
+											<div class="progress">
+												<div class="progress-bar" role="progressbar" aria-valuenow="70"
+												aria-valuemin="0" aria-valuemax="100" style="width:75%">
+												<span class="sr-only">75% Complete</span>
+												</div>
+											</div>
+										</div>
+										
+										<div class="col-lg-12">
+											<p class="large">System/Applications</p>
+											<div class="progress">
+												<div class="progress-bar" role="progressbar" aria-valuenow="70"
+												aria-valuemin="0" aria-valuemax="100" style="width:70%">
+												<span class="sr-only">70% Complete</span>
+												</div>
+											</div>
+										</div>
+										
+									</div> <!-- end of progskills -->
+										
+										
+									<div class="col-lg-12">
+										<br><br>
+										<h4 class="service-heading">TOOLS / SOFTWARE APPLICATIONS</h4>
+										<p class="text-muted">
+										Knowing more software will help you create a better output.
+										</p>
+										<a href="#tools" class="readmore" data-toggle="collapse">Show >></a>
+										<br><br>
+										
+										
+									</div>	
+									<div id="tools" class="collapse">
+										<div class="col-lg-12 text-center">
+												<img src="img/icons/icons_resume.png" >
+												
+										
+										</div>
+									</div><!-- end of hide / show -->
+							</div> <!-- end of column3 Programming Section -->
 							
-						</div>		
-					</div>		
-				</div>
+					</div>		<!-- end of row -->
+				</div>		<!-- end of container-->
 		</section>
 		
-	
-		<div id="portfolio" class=" text-center bg-blue">
+	<div id="portfolio" hidden>
+		<div class=" text-center bg-blue" >
 				
 			 <h1 style="font-size:30px;" align="center" class="">MY PORTFOLIO</h1>
 			<p>Compilation of my ideas.</p>
@@ -853,313 +1002,105 @@
 		</div>
 		 
 		<div  class="bg-gray">
-		
-		<div class="container">	
-			<br><br><br>
-				
-			<div class="container_box">
-				<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/VECTOR16.jpg"><div ><p>Illustration </p></div></div>
-				<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/PRINTS24.jpg"><div ><p>Infographics </p></div></div>
-				<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/VECTOR17.jpg"><div ><p>Illustration </p></div></div>
-				<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/PRINTS22.jpg"><div ><p>Graphic Design</p></div></div>
-				<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/PRINTS23.jpg"><div ><p>Graphics | 3D Design</p></div></div>
-				<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/VECTOR12.jpg"><div ><p>Illustration </p></div></div>
-				<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/VECTOR13.jpg"><div ><p>Illustration </p></div></div>
-				<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/VECTOR14.jpg"><div ><p>Illustration </p></div></div>
-				<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/VECTOR15.jpg"><div ><p>Illustration </p></div></div>
-				<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/PRINTS14.jpg"><div ><p>Illustration <a href="http://online.fliphtml5.com/rixe/jaae/" target="_blank" class="preview">Preview</a></p></div></div>
-				<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/PRINTS15.jpg"><div ><p>Graphic Design</p></div></div>
-				<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/PRINTS16.jpg"><div ><p>Graphic Design</p></div></div>
-				<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/PRINTS17.jpg"><div ><p>Graphic Design</p></div></div>
-				<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/PRINTS18.jpg"><div ><p>Graphic Design <a href="http://online.fliphtml5.com/rixe/jxtl/" target="_blank" class="preview">Preview</a></p></div></div>
-				<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/PRINTS19.jpg"><div ><p>Graphic Design <a href="http://online.fliphtml5.com/rixe/jxtl/" target="_blank" class="preview">Preview</a></p></div></div>
-				<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/PRINTS20.jpg"><div ><p>Graphic Design</p></div></div>
-				<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/PRINTS21.jpg"><div ><p>Graphic Design <a href="http://online.fliphtml5.com/rixe/jxtl/" target="_blank" class="preview">Preview</a></p></div></div>
-				<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/VECTOR6.jpg"><div ><p>Illustration</p></div></div>
-				<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/VECTOR7.jpg"><div ><p>Illustration</p></div></div>
-				<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/PRINTS2.jpg" alt="dfvs"><div ><p >Graphic Design</p></div></div>
-				<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/3Ddesign1.jpg"><div ><p>3D Design</p></div></div>
-				<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/LOGO1.jpg"><div ><p>Logo | Graphic Design</p></div></div>
-				<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/LOGO2.jpg"><div ><p>Logo</p></div></div>
-				<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/PRINTS7.jpg"><div ><p>Graphic Design</p></div></div>
-				<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/PRINTS8.jpg"><div ><p>Graphic Design</p></div></div>
-				<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/LOGO3.jpg"><div ><p>Logo</p></div></div>
-				<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/VECTOR8.jpg"><div ><p>Illustration</p></div></div>
-				<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/VECTOR9.jpg"><div ><p>Illustration</p></div></div>
-				<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/TEEDESIGN1.jpg"><div ><p>Tee Design</p></div></div>
-				<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/LOGO4.jpg"><div ><p>Logo</p></div></div>
-				<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/LOGO5.jpg"><div ><p>Logo</p></div></div>
-				<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/PRINTS3.jpg"><div ><p>Graphic Design</p></div></div>
-				<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/TEEDESIGN2.jpg"><div ><p>Tee Design</p></div></div>
-				<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/VECTOR10.jpg"><div ><p>Illustration</p></div></div>
-				<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/VECTOR11.jpg"><div ><p>Illustration</p></div></div>
-				<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/3Ddesign2.jpg"><div ><p>Game Design | Game Devt</p></div></div>
-				<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/TEEDESIGN3.jpg"><div ><p>Tee Design</p></div></div>
-				<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/TEEDESIGN4.jpg"><div ><p>Tee Design</p></div></div>
-				<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/LOGO6.jpg"><div ><p>Graphic Design</p></div></div>
-				<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/LOGO7.jpg"><div ><p>Logo</p></div></div>
-				<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/LOGO8.jpg"><div ><p>Logo</p></div></div>
-				<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/LOGO9.jpg"><div ><p>Logo</p></div></div>
-				<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/PRINTS4.jpg"><div ><p>Graphic Design</p></div></div>
-				<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/PRINTS5.jpg"><div ><p>Graphic Design</p></div></div>
-				<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/PRINTS6.jpg"><div ><p>Graphic Design</p></div></div>
-				<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/TEEDESIGN5.jpg"><div ><p>Tee Design</p></div></div>
-				<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/TEEDESIGN6.jpg"><div ><p>Tee Design</p></div></div>
-				<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/TEEDESIGN7.jpg"><div ><p>Tee Design</p></div></div>
-				<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/3Ddesign3.jpg"><div ><p>Game Design | Game Devt</p></div></div>
-				<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/3Ddesign4.jpg"><div ><p>Game Design | Game Devt</p></div></div>
-				<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/3Ddesign5.jpg"><div ><p>Interior Design</p></div></div>
-				<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/3Ddesign6.jpg"><div ><p>Interior Design</p></div></div>
-				<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/3Ddesign7.jpg"><div ><p>Interior Design</p></div></div>
-				<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/3Ddesign8.jpg"><div ><p>Interior Design</p></div></div>
-				<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/3Ddesign9.jpg"><div ><p>Game Design | Game Devt	</p></div></div>
-				<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/3Ddesign10.jpg"><div ><p>Game Design | Game Devt</p></div></div>
-				<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/3Ddesign11.jpg"><div ><p>Character Design</p></div></div>
-				<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/3Ddesign12.jpg"><div ><p>Character Design</p></div></div>
-				<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/PRINTS1.jpg"><div ><p>Graphic Design</p></div></div>
-				<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/PRINTS9.jpg"><div ><p>Graphic Design</p></div></div>
-				<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/PRINTS10.jpg"><div ><p>Graphic Design</p></div></div>
-				<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/PRINTS11.jpg"><div ><p>Graphic Design</p></div></div>
-				<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/PRINTS12.jpg"><div ><p>Graphic Design <a href="http://online.fliphtml5.com/rixe/bgyu/" target="_blank" class="preview">Preview</a></p></div></div>
-				<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/PRINTS13.jpg"><div ><p>Graphic Design</p></div></div>
-				<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/VECTOR1.jpg"><div ><p>Illustration</p></div></div>
-				<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/VECTOR2.jpg"><div ><p>Illustration</p></div></div>
-				<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/VECTOR3.jpg"><div ><p>Illustration</p></div></div>
-				<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/VECTOR4.jpg"><div ><p>Illustration</p></div></div>
-				<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/VECTOR5.jpg"><div ><p>Illustration</p></div></div>
-		
-
-
-				  <!-- images placed inside block elements to deal with a Firefox rendering bug affecting  scaled flexbox images -->
-			</div>
-				
+			<div class="container">	
 				<br><br><br>
 				
-				
-							
-	
-						
-					
+				<div class="container_box">
+					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/VECTOR19.jpg"><div ><p class="portfolio-tags">Illustration </p></div></div>
+					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/VECTOR18.jpg"><div ><p class="portfolio-tags">Illustration </p></div></div>
+					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/TEEDESIGN8.jpg"><div ><p class="portfolio-tags">Tee Design</p></div></div>
+					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/TEEDESIGN9.jpg"><div ><p class="portfolio-tags">Tee Design</p></div></div>
+					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/TEEDESIGN10.jpg"><div ><p class="portfolio-tags">Tee Design</p></div></div>
+					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/TEEDESIGN11.jpg"><div ><p class="portfolio-tags">Tee Design</p></div></div>
+					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/TEEDESIGN12.jpg"><div ><p class="portfolio-tags">Tee Design</p></div></div>
+					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/TEEDESIGN13.jpg"><div ><p class="portfolio-tags">Tee Design</p></div></div>
+					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/TEEDESIGN14.jpg"><div ><p class="portfolio-tags">Tee Design</p></div></div>
+					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/VECTOR16.jpg"><div ><p class="portfolio-tags">Illustration </p></div></div>
+					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/PRINTS24.jpg"><div ><p class="portfolio-tags">Infographics </p></div></div>
+					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/VECTOR17.jpg"><div ><p class="portfolio-tags">Illustration </p></div></div>
+					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/PRINTS22.jpg"><div ><p class="portfolio-tags">Graphic Design</p></div></div>
+					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/PRINTS23.jpg"><div ><p class="portfolio-tags">Graphics | 3D Design</p></div></div>
+					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/VECTOR12.jpg"><div ><p class="portfolio-tags">Illustration </p></div></div>
+					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/VECTOR13.jpg"><div ><p class="portfolio-tags">Illustration </p></div></div>
+					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/VECTOR14.jpg"><div ><p class="portfolio-tags">Illustration </p></div></div>
+					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/VECTOR15.jpg"><div ><p class="portfolio-tags">Illustration </p></div></div>
+					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/PRINTS14.jpg"><div ><p class="portfolio-tags">Illustration <a href="http://online.fliphtml5.com/rixe/jaae/" target="_blank" class="preview">Preview</a></p></div></div>
+					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/PRINTS15.jpg"><div ><p class="portfolio-tags">Graphic Design</p></div></div>
+					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/PRINTS16.jpg"><div ><p class="portfolio-tags">Graphic Design</p></div></div>
+					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/PRINTS17.jpg"><div ><p class="portfolio-tags">Graphic Design</p></div></div>
+					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/PRINTS18.jpg"><div ><p class="portfolio-tags">Graphic Design <a href="http://online.fliphtml5.com/rixe/jxtl/" target="_blank" class="preview">Preview</a></p></div></div>
+					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/PRINTS19.jpg"><div ><p class="portfolio-tags">Graphic Design <a href="http://online.fliphtml5.com/rixe/jxtl/" target="_blank" class="preview">Preview</a></p></div></div>
+					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/PRINTS20.jpg"><div ><p class="portfolio-tags">Graphic Design</p></div></div>
+					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/PRINTS21.jpg"><div ><p class="portfolio-tags">Graphic Design <a href="http://online.fliphtml5.com/rixe/jxtl/" target="_blank" class="preview">Preview</a></p></div></div>
+					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/VECTOR6.jpg"><div ><p class="portfolio-tags">Illustration</p></div></div>
+					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/VECTOR7.jpg"><div ><p class="portfolio-tags">Illustration</p></div></div>
+					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/PRINTS2.jpg" alt="dfvs"><div ><p  class="portfolio-tags">Graphic Design</p></div></div>
+					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/3Ddesign1.jpg"><div ><p class="portfolio-tags">3D Design</p></div></div>
+					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/LOGO1.jpg"><div ><p class="portfolio-tags">Logo | Graphic Design</p></div></div>
+					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/LOGO2.jpg"><div ><p class="portfolio-tags">Logo</p></div></div>
+					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/PRINTS7.jpg"><div ><p class="portfolio-tags">Graphic Design</p></div></div>
+					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/PRINTS8.jpg"><div ><p class="portfolio-tags">Graphic Design</p></div></div>
+					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/LOGO3.jpg"><div ><p class="portfolio-tags">Logo</p></div></div>
+					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/VECTOR8.jpg"><div ><p class="portfolio-tags">Illustration</p></div></div>
+					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/VECTOR9.jpg"><div ><p class="portfolio-tags">Illustration</p></div></div>
+					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/TEEDESIGN1.jpg"><div ><p class="portfolio-tags">Tee Design</p></div></div>
+					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/LOGO4.jpg"><div ><p class="portfolio-tags">Logo</p></div></div>
+					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/LOGO5.jpg"><div ><p class="portfolio-tags">Logo</p></div></div>
+					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/PRINTS3.jpg"><div ><p class="portfolio-tags">Graphic Design</p></div></div>
+					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/TEEDESIGN2.jpg"><div ><p class="portfolio-tags">Tee Design</p></div></div>
+					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/VECTOR10.jpg"><div ><p class="portfolio-tags">Illustration</p></div></div>
+					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/VECTOR11.jpg"><div ><p class="portfolio-tags">Illustration</p></div></div>
+					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/3Ddesign2.jpg"><div ><p class="portfolio-tags">Game Design | Game Devt</p></div></div>
+					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/TEEDESIGN3.jpg"><div ><p class="portfolio-tags">Tee Design</p></div></div>
+					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/TEEDESIGN4.jpg"><div ><p class="portfolio-tags">Tee Design</p></div></div>
+					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/LOGO6.jpg"><div ><p class="portfolio-tags">Graphic Design</p></div></div>
+					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/LOGO7.jpg"><div ><p class="portfolio-tags">Logo</p></div></div>
+					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/LOGO8.jpg"><div ><p class="portfolio-tags">Logo</p></div></div>
+					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/LOGO9.jpg"><div ><p class="portfolio-tags">Logo</p></div></div>
+					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/PRINTS4.jpg"><div ><p class="portfolio-tags">Graphic Design</p></div></div>
+					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/PRINTS5.jpg"><div ><p class="portfolio-tags">Graphic Design</p></div></div>
+					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/PRINTS6.jpg"><div ><p class="portfolio-tags">Graphic Design</p></div></div>
+					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/TEEDESIGN5.jpg"><div ><p class="portfolio-tags">Tee Design</p></div></div>
+					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/TEEDESIGN6.jpg"><div ><p class="portfolio-tags">Tee Design</p></div></div>
+					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/TEEDESIGN7.jpg"><div ><p class="portfolio-tags">Tee Design</p></div></div>
+					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/3Ddesign3.jpg"><div ><p class="portfolio-tags">Game Design | Game Devt</p></div></div>
+					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/3Ddesign4.jpg"><div ><p class="portfolio-tags">Game Design | Game Devt</p></div></div>
+					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/3Ddesign5.jpg"><div ><p class="portfolio-tags">Interior Design</p></div></div>
+					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/3Ddesign6.jpg"><div ><p class="portfolio-tags">Interior Design</p></div></div>
+					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/3Ddesign7.jpg"><div ><p class="portfolio-tags">Interior Design</p></div></div>
+					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/3Ddesign8.jpg"><div ><p class="portfolio-tags">Interior Design</p></div></div>
+					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/3Ddesign9.jpg"><div ><p class="portfolio-tags">Game Design | Game Devt	</p></div></div>
+					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/3Ddesign10.jpg"><div ><p class="portfolio-tags">Game Design | Game Devt</p></div></div>
+					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/3Ddesign11.jpg"><div ><p class="portfolio-tags">Character Design</p></div></div>
+					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/3Ddesign12.jpg"><div ><p class="portfolio-tags">Character Design</p></div></div>
+					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/PRINTS1.jpg"><div ><p class="portfolio-tags">Graphic Design</p></div></div>
+					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/PRINTS9.jpg"><div ><p class="portfolio-tags">Graphic Design</p></div></div>
+					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/PRINTS10.jpg"><div ><p class="portfolio-tags">Graphic Design</p></div></div>
+					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/PRINTS11.jpg"><div ><p class="portfolio-tags">Graphic Design</p></div></div>
+					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/PRINTS12.jpg"><div ><p class="portfolio-tags">Graphic Design <a href="http://online.fliphtml5.com/rixe/bgyu/" target="_blank" class="preview">Preview</a></p></div></div>
+					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/PRINTS13.jpg"><div ><p class="portfolio-tags">Graphic Design</p></div></div>
+					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/VECTOR1.jpg"><div ><p class="portfolio-tags">Illustration</p></div></div>
+					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/VECTOR2.jpg"><div ><p class="portfolio-tags">Illustration</p></div></div>
+					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/VECTOR3.jpg"><div ><p class="portfolio-tags">Illustration</p></div></div>
+					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/VECTOR4.jpg"><div ><p class="portfolio-tags">Illustration</p></div></div>
+					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/VECTOR5.jpg"><div ><p class="portfolio-tags">Illustration</p></div></div>
+				  <!-- images placed inside block elements to deal with a Firefox rendering bug affecting  scaled flexbox images -->
 				</div>
-            </div>
-
+				<br><br><br>
 			</div>
+        </div>
+	</div>
+
 		
+
+		
+		<div class=" text-center bg-blue-thin" >
 		</div>
+    <footer class="bg-footer" id="contact">
 		
-	
-		
-		
-		<section id="certificates"  class="text-center">
-			
-			<div class="well_trans">
-			
-			<h3 class="text-primary">Awards & Certificates</h3>
-				<p class="text-muted ">I got these certificates from different events such as Seminars, Internship, IT interskills and Thesis Exhibit.</p><br>
-				<div class="container">
-					<div class="owl-carousel5">
-					
-								<div class="item cert">
-									<img src="img/certs/18.png" class="img-responsive" class="pic"  data-toggle="modal" data-target="#myModal" >
-									<div>
-										<p><br> 
-										3D Modeling<br> 
-										<small>EGlobio Trainings & Seminars</small>
-										</p>
-									</div>
-								</div>
-
-								<div class="item cert">
-									<img src="img/certs/1.png" class="img-responsive" class="pic"  data-toggle="modal" data-target="#myModal" >
-									<div>
-										<p><br> 
-										Blender Tutorial <br> 
-										<small>by Ms. Kamil Jade Corpuz</small>
-										</p>
-									</div>
-								</div>
-								
-								
-								<div class="item cert">
-									<img src="img/certs/2.png" class="img-responsive" class="pic"  data-toggle="modal" data-target="#myModal" >
-									<div>
-										<p><br> 
-										Vector & Vexel Art <br> 
-										<small>by Ms. Kamil Jade Corpuz</small>
-										</p>
-									</div>
-								</div>
-								
-								
-								
-								<div class="item cert">
-									<img src="img/certs/3.png" class="img-responsive" class="pic"  data-toggle="modal" data-target="#myModal" >
-									<div>
-										<p><br> 
-										Logo Making <br> 
-										<small>by Ms. Kamil Jade Corpuz</small>
-										</p>
-									</div>
-								</div>
-								
-								
-								<div class="item cert">
-									<img src="img/certs/4.png" class="img-responsive" class="pic"  data-toggle="modal" data-target="#myModal" >
-									<div>
-										<p><br> 
-										Infographics <br> 
-										<small>by Ms. Kamil Jade Corpuz</small>
-										</p>
-									</div>
-								</div>
-								
-								<div class="item cert">
-									<img src="img/certs/5.png" class="img-responsive" class="pic"  data-toggle="modal" data-target="#myModal" >
-									<div>
-										<p><br> 
-										Benefits<br> 
-										<small>by Ms. Kamil Jade Corpuz</small>
-										</p>
-									</div>
-								</div>
-								
-								<div class="item cert">
-									<img src="img/certs/6.png" class="img-responsive" class="pic"  data-toggle="modal" data-target="#myModal" >
-									<div>
-										<p><br> 
-										3GS vs. Wifi<br> 
-										<small>by Mr. harvey Octaviano</small>
-										</p>
-									</div>
-								</div>
-						
-								<div class="item cert">
-									<img src="img/certs/7.png" class="img-responsive" class="pic"  data-toggle="modal" data-target="#myModal" >
-									<div>
-										<p><br> 
-										Adobe After Effects<br> 
-										<small>by by Mr. harvey Octaviano</small>
-										</p>
-									</div>
-								</div>
-								
-								
-								<div class="item cert">
-									<img src="img/certs/8.png" class="img-responsive" class="pic"  data-toggle="modal" data-target="#myModal" >
-									<div>
-										<p><br> 
-										Adobe Premiere<br> 
-										<small>by by Mr. harvey Octaviano</small>
-										</p>
-									</div>
-								</div>
-								
-								<div class="item cert">
-									<img src="img/certs/9.png" class="img-responsive" class="pic"  data-toggle="modal" data-target="#myModal" >
-									<div>
-										<p><br> 
-										Adobe After Effects<br> 
-										<small>by Ms. Jestine Zulaybar</small>
-										</p>
-									</div>
-								</div>
-								
-								
-								<div class="item cert">
-									<img src="img/certs/10.png" class="img-responsive" class="pic"  data-toggle="modal" data-target="#myModal" >
-									<div>
-										<p><br> 
-										On the Job Training<br> 
-										<small>by Ms. Kamil Jade Corpuz</small>
-										</p>
-									</div>
-								</div>
-								
-								<div class="item cert">
-									<img src="img/certs/11.png" class="img-responsive" class="pic"  data-toggle="modal" data-target="#myModal" >
-									<div>
-										<p><br> 
-										Robotics using Arduino<br> 
-										<small>by Mr. Aljabri Alam</small>
-										</p>
-									</div>
-								</div>
-								
-								<div class="item cert">
-									<img src="img/certs/12.png" class="img-responsive" class="pic"  data-toggle="modal" data-target="#myModal" >
-									<div>
-										<p><br> 
-										Adobe Magic<br> 
-										<small>by Mr. Rollan Banez</small>
-										</p>
-									</div>
-								</div>
-								
-								<div class="item cert">
-									<img src="img/certs/13.png" class="img-responsive" class="pic"  data-toggle="modal" data-target="#myModal" >
-									<div>
-										<p><br> 
-										Android App Dev't<br> 
-										<small>by Mr. Erwin E. Globio</small>
-										</p>
-									</div>
-								</div>
-								
-								
-								<div class="item cert">
-									<img src="img/certs/14.png" class="img-responsive" class="pic"  data-toggle="modal" data-target="#myModal" >
-									<div>
-										<p><br> 
-										Big Data Analytics<br> 
-										<small>by Mr. Erwin E. Globio</small>
-										</p>
-									</div>
-								</div>
-								
-								<div class="item cert">
-									<img src="img/certs/15.png" class="img-responsive" class="pic"  data-toggle="modal" data-target="#myModal" >
-									<div>
-										<p><br> 
-										IT Interskills<br> 
-										<small>University of Caloocan City</small>
-										</p>
-									</div>
-								</div>
-								
-								<div class="item cert">
-									<img src="img/certs/16.png" class="img-responsive" class="pic"  data-toggle="modal" data-target="#myModal" >
-									<div>
-										<p><br> 
-										Best Popular Award<br> 
-										<small>University of Caloocan City</small>
-										</p>
-									</div>
-								</div>
-					
-								<div class="item cert">
-									<img src="img/certs/17.png" class="img-responsive" class="pic"  data-toggle="modal" data-target="#myModal" >
-									<div>
-										<p><br> 
-										IT Interskills<br> 
-										<small>University of Caloocan City</small>
-										</p>
-									</div>
-								</div>
-					
-								
-					
-					
-				
-					</div>
-				</div>
-			</div>
-		</section>	
-			
-			
-    <footer class="bg-footer" >
         <div class="container">
             <div class="row">
-			 <div class="col-md-2">
+				<div class="col-md-2">
 						
                 </div>
                 <div class="col-md-2">
@@ -1168,11 +1109,11 @@
                 <div class="col-md-2 text-left	">
 				<br>
 					<div class="well_trans">
-						<a href="#aboutme" class="page-scroll">ABOUT ME</a><br>
+						<a href="#aboutme" onclick="aboutMe()"class="page-scroll">ABOUT ME</a><br>
 						
-                        <a href="#experience" onclick="showExpe()" class="page-scroll">EXPERIENCES</a><br>
-                        <a href="#portfolio"  class="page-scroll">PORTFOLIO</a><br>
-                        <a href="#certificates"  class="page-scroll">CERTIFICATES</a><br><br>
+                        <a href="#experience" onclick="experience()" class="page-scroll">EXPERIENCES</a><br>
+                        <a href="#portfolio"  onclick="portfolio()"class="page-scroll">PORTFOLIO</a><br><br>
+                        
                         <a href="https://www.facebook.com/kamscreatiivedesigns/" target="_blank">Kams Creative Designs</a><br><br>
 					</div>	
 						
@@ -1189,14 +1130,13 @@
                        <a href="#"><i class="fa fa-google-plus"></i>&nbsp; google</a><br>-->
                     
               
-					<a href="https://www.facebook.com/kamiljadecorpuz"><i class="fa fa-2x fa-facebook"></i></a>&nbsp;&nbsp;&nbsp;
-					<a href="https://ph.linkedin.com/in/kamil-jade-corpuz-5b0978b7"><i class="fa fa-2x fa-linkedin"></i></a> &nbsp;&nbsp;&nbsp;
-					<a href="https://www.behance.net/Kamiljade"><i class="fa fa-2x fa-behance"></i></a>&nbsp;&nbsp;&nbsp;
+					
+					<a href="https://ph.linkedin.com/in/kamil-jade-corpuz-5b0978b7" target="_blank"><i class="fa fa-2x fa-linkedin"></i></a> &nbsp;&nbsp;&nbsp;
+					<a href="https://www.behance.net/Kamiljade" target="_blank"><i class="fa fa-2x fa-behance"></i></a>&nbsp;&nbsp;&nbsp;
 					
 					
 					<br><br>
 					<i class="fa fa-envelope"></i>&nbsp; kamiljadecorpuz1404@gmail.com<br>
-					<i class="fa fa-envelope"></i>&nbsp; kamiljadecorpuz@yahoo.com<br>
 					<i class="fa fa-phone"></i> &nbsp; (02) 618-5933 <br>
 					&nbsp;<i class="fa fa-mobile"></i> &nbsp; (+63) 926 - 319 - 7128
 					<br>
@@ -1257,6 +1197,18 @@
 					
 					$('#myModal').on('show.bs.modal', function () {
 					$(".img-thumbnail").attr("src", image);
+			
+					
+					});
+					
+					
+				});
+				
+				$('a').on('click', function () {
+					var image1 = $(this).attr('src');
+					
+					$('#myModal').on('show.bs.modal', function () {
+					$(".img-thumbnail").attr("src", image1);
 			
 					
 					});
@@ -1394,8 +1346,8 @@
 							},
 							1000:{
 								items:5,
-								nav:true,
-								loop:false
+								
+								
 							}
 						}
 					})
@@ -1405,6 +1357,8 @@
 			
 								
 			</script>
+			
+	</div>
 </body>
 
 </html>
