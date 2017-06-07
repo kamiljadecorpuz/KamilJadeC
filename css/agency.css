@@ -825,7 +825,11 @@ font-size: 55px;
    
 }
 
+div.container_gallery{ 
+  padding: 20px 20px;
 
+  
+}
 div.container_box{ 
   padding: .5vw;
   font-size: 0;
