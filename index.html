@@ -44,6 +44,7 @@
 								document.getElementById('aboutme').hidden = false; 
 								document.getElementById('experience').hidden = true; 
 								document.getElementById('portfolio').hidden = true; 
+								document.getElementById('contact').hidden = false; 
 								}
 								
 								
@@ -51,10 +52,13 @@
 								document.getElementById('aboutme').hidden = true; 
 								document.getElementById('experience').hidden = false; 
 								document.getElementById('portfolio').hidden = true; 
+								document.getElementById('contact').hidden = false; 
 								}
 								
 								
 								function portfolio(){
+								
+								document.getElementById('contact').hidden = true; 
 								document.getElementById('aboutme').hidden = true; 
 								document.getElementById('experience').hidden = true; 
 								document.getElementById('portfolio').hidden = false; 
@@ -158,7 +162,7 @@ function showPage() {
     </nav>
 
     <!-- Header -->
-    <header>
+    <header id="head">
 
 			
 				
@@ -1022,7 +1026,7 @@ function showPage() {
 		</section>
 		
 	<div id="portfolio" hidden>
-		<div class=" text-center bg-blue" >
+		<div class=" text-center bg-blue" hidden>
 				
 			 <h1 style="font-size:30px;" align="center" class="">MY PORTFOLIO</h1>
 			<p>Compilation of my ideas.</p>
@@ -1039,6 +1043,41 @@ function showPage() {
 		</div>
 		 
 		<div  class="bg-gray">
+		
+
+
+
+  <div class="row">
+
+    <nav class="col-lg-3">
+	
+      <ul class="nav nav-pills nav-stacked " data-spy="affix" data-offset-top="600">
+        <li><p class="pic"> Graphic Design <span class="badge"> 23 </span></p></li>
+        <li><p class="pic"> Illustration <span class="badge"> 23 </span></p></li>
+        <li><p class="pic"> 3D Design <span class="badge"> 2 </span></p></li>
+        <li><p class="pic"> Infographics <span class="badge"> 1 </span></p></li>
+        <li><p class="pic"> Logo <span class="badge"> 9 </span></p></li>
+        <li><p class="pic"> Tee Design <span class="badge"> 14 </span></p></li>
+        <li><p class="pic"> Game Design <span class="badge"> 5 </span></p></li>
+        <li><p class="pic"> Hand Made Design <span class="badge"> 1 </span></p></li>
+        <li><p class="pic"> Web Designs <span class="badge"> 5 </span></p></li>
+        <li><p class="pic"> System/Applications <span class="badge"> 5 </span></p></li>
+        <li><small><i class="fa fa-envelope"></i>&nbsp; kamiljadecorpuz1404@gmail.com<br>
+					<i class="fa fa-phone"></i> &nbsp; (02) 618-5933 <br>
+					&nbsp;<i class="fa fa-mobile"></i> &nbsp; (+63) 926 - 319 - 7128
+					<br>
+					<span class="copyright  text-left" >Copyright &copy; All rights reserved KJC 2016</span></small></li>
+		
+        
+      </ul>
+    </nav>
+    
+
+
+		
+		
+		
+	<div class="col-lg-9"> 	
 			<div class="container_gallery">	
 				<br><br><br>
 				
@@ -1151,7 +1190,8 @@ function showPage() {
 			</div>
         </div>
 	</div>
-
+  </div>
+  </div>
 		
 
 		
