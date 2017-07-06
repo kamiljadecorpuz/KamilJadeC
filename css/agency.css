@@ -536,7 +536,7 @@ opacity:1;
 	
 	.showinfo{
 	float:right;
-	background-color:trasparent;
+	background-color:transparent;
 	text-decoration:none;
 	font-size:10px;
 	padding: 3px 5px;
@@ -724,6 +724,22 @@ font-size: 55px;
 }	
 
 .container_collapse:hover{
+	overflow-x: hidden;
+	overflow-y: scroll;
+	
+  
+}
+
+
+.container_collapse_work{
+	overflow-x: hidden;
+	overflow-y: hidden;
+	width: 50%;
+    max-height: 700px;
+
+}	
+
+.container_collapse_work:hover{
 	overflow-x: hidden;
 	overflow-y: scroll;
 	
@@ -925,4 +941,14 @@ padding: .5vw;
 @keyframes animatebottom { 
   from{ bottom:-100px; opacity:0 } 
   to{ bottom:0; opacity:1 }
+}
+
+.img-cust-circle{
+border-radius:50%;
+width: 80%;
+border: 6px #525252 solid;
+}
+
+.img-cust-circle:hover{
+border: 6px #3977a2 solid;
 }
