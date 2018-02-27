@@ -28,49 +28,35 @@
 	<!-- CSS -->
 	<link href="css/owl.carousel.css" rel="stylesheet">
 
-	
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-	
-	
 	<script type="text/javascript">
 			
+			function aboutMe(){
+			document.getElementById('aboutme').hidden = false; 
+			document.getElementById('experience').hidden = true; 
+			document.getElementById('portfolio').hidden = true; 
+			document.getElementById('contact').hidden = false; 
+			document.getElementById('head').hidden = false; 
+			}
 			
-								function aboutMe(){
-								document.getElementById('aboutme').hidden = false; 
-								document.getElementById('experience').hidden = true; 
-								document.getElementById('portfolio').hidden = true; 
-								document.getElementById('contact').hidden = false; 
-								document.getElementById('head').hidden = false; 
-								}
-								
-								
-								function experience(){
-								document.getElementById('aboutme').hidden = true; 
-								document.getElementById('experience').hidden = false; 
-								document.getElementById('portfolio').hidden = true; 
-								document.getElementById('contact').hidden = false; 
-								document.getElementById('head').hidden = true; 
-								}
-								
-								
-								function portfolio(){
-								
-								document.getElementById('head').hidden = true; 
-								document.getElementById('contact').hidden = true; 
-								document.getElementById('aboutme').hidden = true; 
-								document.getElementById('experience').hidden = true; 
-								document.getElementById('portfolio').hidden = false; 
-								}
-								
-				
-						
-								
-			</script>
+			
+			function experience(){
+			document.getElementById('aboutme').hidden = true; 
+			document.getElementById('experience').hidden = false; 
+			document.getElementById('portfolio').hidden = true; 
+			document.getElementById('contact').hidden = false; 
+			document.getElementById('head').hidden = true; 
+			}
+			
+			
+			function portfolio(){
+			
+			document.getElementById('head').hidden = true; 
+			document.getElementById('contact').hidden = true; 
+			document.getElementById('aboutme').hidden = true; 
+			document.getElementById('experience').hidden = true; 
+			document.getElementById('portfolio').hidden = false; 
+			}					
+		</script>
 </head>
 
 <body id="page-top" class="index" onload="myFunction()">
@@ -105,21 +91,13 @@ function showPage() {
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
+                    <li class="hidden"><a href="#page-top"></a></li>
                   
-					<li>
-                        <a class="page-scroll" href="#aboutme" onclick="aboutMe()">&nbsp;About</a>
-                    </li>
+					<li><a class="page-scroll" href="#aboutme" onclick="aboutMe()">&nbsp;About</a></li>
 					
-					<li>
-                        <a class="page-scroll" href="#experience" onclick="experience()">&nbsp;Experiences</a>
-                    </li>
+					<li><a class="page-scroll" href="#experience" onclick="experience()">&nbsp;Experiences</a></li>
 					
-					<li>
-                        <a class="page-scroll" href="#portfolio" onclick="portfolio()">&nbsp;Portfolio</a>
-                    </li>
+					<li><a class="page-scroll" href="#portfolio" onclick="portfolio()">&nbsp;Portfolio</a></li>
                     
 					
 				
@@ -148,7 +126,7 @@ function showPage() {
 				<div class="col-lg-6">
 					
                                <!-- <img class="img-circle img-responsive" align="right" src="img/about/3.jpg" alt=""> -->
-                          <br><br><br>
+                        <br><br><br>
 						<div class=" text-left well_dark" >
 						<p class="service-heading1" >Bachelor of Science in Computer Science</p>
 						<p class="service-subheading1">University of Caloocan City <br>South Campus,Metro Manila</p>
@@ -162,31 +140,7 @@ function showPage() {
 					
 					</div>
 						
-				<div class="col-lg-6 center" hidden>
-					<br><br><br>
-					<div class="owl-carousel3 text-center">
-						<div class="item img-responsive"><img src="img/system1.png" class=""></div>
-						<div class="item img-responsive"><img src="img/system2.png" class=""></div>
-						<div class="item img-responsive"><img src="img/system3.png" class=""></div>
-						<div class="item img-responsive"><img src="img/system4.png" class=""></div>
-						<div class="item img-responsive"><img src="img/system5.png" class=""></div>
-						<div class="item img-responsive"><img src="img/system6.png" class=""></div>
-						<div class="item img-responsive"><img src="img/system7.png" class=""></div>
-						<div class="item img-responsive"><img src="img/system8.png" class=""></div>
-						<div class="item img-responsive"><img src="img/system9.png" class=""></div>
-						<div class="item img-responsive"><img src="img/system10.png" class=""></div>
-						<div class="item img-responsive"><img src="img/system11.png" class=""></div>
-						<div class="item img-responsive"><img src="img/system12.png" class=""></div>
-						
-						<div class="item img-responsive"><img src="img/web1.png" class=""></div>
-						<div class="item img-responsive"><img src="img/web2.png" class=""></div>
-						<div class="item img-responsive"><img src="img/web3.png" class=""></div>
-						<div class="item img-responsive"><img src="img/web4.png" class=""></div>
-						<div class="item img-responsive"><img src="img/web5.png" class=""></div>
-					
-					</div>
-				</div>
-					
+				
 					
 					
 			</div>
@@ -207,43 +161,43 @@ function showPage() {
 				<div class="row">
 					<div class="col-lg-3 well_trans">
 						
-						<span class="fa-stack fa-4x  text-dark">
+						<span class="fa-stack fa-4x  text-orange">
 							<i class="fa fa-circle fa-stack-2x"></i>
 							<i class="fa fa-level-up fa-stack-1x fa-inverse"></i>
 						</span>
 						
 						<h4 class="service-heading">My Objectives</h4>
-						<hr style="width:70px;height:2px;border:none;color:#333;background-color:#333;" />
+						<hr class="smallHrLine" />
 						<p class="text-muted">To apply all the knowledge gained from previous experiences, to enhance my skills and decision making. Acquire more knowledge and to be tenured as well.</p>
 					</div>
 					
 					<div class="col-lg-3  well_trans">
-						<span class="fa-stack fa-4x text-dark">
+						<span class="fa-stack fa-4x text-orange">
 							<i class="fa fa-circle fa-stack-2x"></i>
 							<i class="fa fa-lightbulb-o fa-stack-1x fa-inverse"></i>
 						</span>
 						<h4 class="service-heading">My Creativity</h4>
-						<hr style="width:70px;height:2px;border:none;color:#333;background-color:#333;" />
+						<hr class="smallHrLine" />
 						<p class="text-muted">I like experimenting and creating something out of the box. I can make a design manually or digitally and do some related stuffs simultaneously.  </p>
 						
 					</div>
 					<div class="col-lg-3 well_trans">
-						<span class="fa-stack fa-4x text-dark">
+						<span class="fa-stack fa-4x text-orange">
 							<i class="fa fa-circle fa-stack-2x"></i>
 							<i class="fa fa-heart-o fa-stack-1x fa-inverse"></i>
 						</span>
 						<h4 class="service-heading">My Passion</h4>
-						<hr style="width:70px;height:2px;border:none;color:#333;background-color:#333;" />
+						<hr class="smallHrLine" />
 						<p class="text-muted">I love both programming and designing. I like showing my talents, sharing ideas and inspiring other people. I'm always expressing my unique self this way.</p>
 						
 					</div>
 					<div class="col-lg-3 well_trans">
-						<span class="fa-stack fa-4x text-dark">
+						<span class="fa-stack fa-4x text-orange">
 							<i class="fa fa-circle fa-stack-2x"></i>
 							<i class="fa fa-thumbs-o-up fa-stack-1x fa-inverse"></i>
 						</span>
 						<h4 class="service-heading">My Skills</h4>
-						<hr style="width:70px;height:2px;border:none;color:#333;background-color:#333;" />
+						<hr class="smallHrLine" />
 						<p class="text-muted">I'm a fast learner, eager to learn and flexible. I'm also good in marketing strategies, and had a basic knowledge in electronics and communication engineering</p>
 					
 					</div>
@@ -530,213 +484,104 @@ function showPage() {
 							<div><h4 class="service-heading">Awards & Certificates</h4></div>
 							
 							<div class="container_collapse">
-							
-							<div class="col-lg-12  bg-cert">
-									<div class="col-lg-12" >
-										<a src="img/certs/22.png"  class="large" data-toggle="modal" data-target="#myModal">Network Security</a>
-										<small>EGlobio Trainings & Seminars</small>
+								 <script>
+								        var links = ['img/certs/22.png', 
+								        'img/certs/21.png', 
+								        'img/certs/20.png', 
+								        'img/certs/19.png',
+								        'img/certs/18.png',
+								        'img/certs/17.png',
+								        'img/certs/16.png',
+								        'img/certs/15.png',
+								        'img/certs/14.png',
+								        'img/certs/13.png',
+								        'img/certs/12.png',
+								        'img/certs/11.png',
+								        'img/certs/10.png',
+								        'img/certs/9.png',
+								        'img/certs/8.png',
+								        'img/certs/7.png',
+								        'img/certs/6.png',
+								        'img/certs/5.png',
+								        'img/certs/4.png',
+								        'img/certs/3.png',
+								        'img/certs/2.png',
+								        'img/certs/1.png'
+
+								        ];
+													   
+										var itemTitle = ['Network Security',
+										'Adobe Max',
+										'3D Animation',
+										'Internet of Things',
+										'3D Modeling',
+										'IT Interskills 2014',
+										'Best Popular Thesis Award',
+										'IT Interskills 2013',
+										'Big Data Analytics',
+										'Android App Development',
+										'CC: Adobe Magic',
+										'Robotics using Arduino',
+										'On the Job Training',
+										'Adobe After Effects',
+										'Adobe Premiere',
+										'Adobe After Effects',
+										'3GS vs. Wifi',
+										'Benefits of Being a Graphic Designer',
+										'Infographics',
+										'Logo Making',
+										'Vector & Vexel Art',
+										'Blender Tutorial',
+
+										];	
+
+
+										var itemDescription = ['EGlobio Trainings & Seminars',
+										'EGlobio Trainings & Seminars',
+										'EGlobio Trainings & Seminars',
+										'EGlobio Trainings & Seminars',
+										'EGlobio Trainings & Seminars',
+										'University of Caloocan City',
+										'University of Caloocan City',
+										'University of Caloocan City',
+										'EGlobio Trainings & Seminars',
+										'EGlobio Trainings & Seminars',
+										'EGlobio Trainings & Seminars',
+										'EGlobio Trainings & Seminars',
+										'Dotweblabs Web Technologies',
+										'by Ms. Jestine Zulaybar',
+										'by Mr. harvey Octaviano',
+										'by Mr. harvey Octaviano',
+										'by Mr. harvey Octaviano',
+										'by Ms. Kamil Jade Corpuz',
+										'by Ms. Kamil Jade Corpuz',
+										'by Ms. Kamil Jade Corpuz',
+										'by Ms. Kamil Jade Corpuz',
+										'by Ms. Kamil Jade Corpuz'
+
+										];
 										
-									</div>
-								</div>
-								<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
-							<div class="col-lg-12  bg-cert">
-									<div class="col-lg-12" >
-										<a src="img/certs/21.png"  class="large" data-toggle="modal" data-target="#myModal">Adobe Max</a>
-										<small>EGlobio Trainings & Seminars</small>
+								        for(var i in links ) {
+										var item = links[i];
+										var title = itemTitle[i];
+										var desc = itemDescription[i];
+								        
+
+								        document.write('<div class="col-lg-12  bg-cert">' +
+												'<div class="col-lg-12" >'+
+													'<a src="'+ item +'"  class="large" data-toggle="modal" data-target="#myModal">'+ title +'</a>' +
+													'<small>'+ desc +'</small>'+
+												'</div>'+
+											'</div>');
 										
-									</div>
-								</div>
-								<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
-								<div class="col-lg-12  bg-cert">
-									<div class="col-lg-12" >
-										<a src="img/certs/20.png"  class="large" data-toggle="modal" data-target="#myModal">3D Animation</a>
-										<small>EGlobio Trainings & Seminars</small>
+										}
 										
-									</div>
-								</div>
-								<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
-								<div class="col-lg-12  bg-cert">
-									<div class="col-lg-12" >
-										<a src="img/certs/19.png"  class="large" data-toggle="modal" data-target="#myModal">Internet of Things</a>
-										<small>EGlobio Trainings & Seminars</small>
 										
-									</div>
-								</div>
-								<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
-								<div class="col-lg-12  bg-cert">
-									<div class="col-lg-12" >
-										<a src="img/certs/18.png"  class="large" data-toggle="modal" data-target="#myModal">3D Modeling</a>
-										<small>EGlobio Trainings & Seminars</small>
-										
-									</div>
-								</div>
-								<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
-								
-								<div class="col-lg-12  bg-cert">
-									<div class="col-lg-12" >
-										<a src="img/certs/17.png" class="large" data-toggle="modal" data-target="#myModal">IT Interskills 2014</a>
-										<small>University of Caloocan City</small>
-										
-									</div>
-								</div>
-								<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
-								
-								
-								<div class="col-lg-12  bg-cert">
-									<div class="col-lg-12" >
-										<a src="img/certs/16.png"  class="large" data-toggle="modal" data-target="#myModal">Best Popular Thesis Award</a>
-										<small>University of Caloocan City</small>
-										
-									</div>
-								</div>
-								<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
-								
-								<div class="col-lg-12  bg-cert">
-									<div class="col-lg-12" >
-										<a src="img/certs/15.png"  class="large" data-toggle="modal" data-target="#myModal">IT Interskills 2013</a>
-										<small>University of Caloocan City</small>
-										
-									</div>
-								</div>
-								<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
-								
-								
-								<div class="col-lg-12  bg-cert">
-									<div class="col-lg-12" >
-										<a src="img/certs/14.png"  class="large" data-toggle="modal" data-target="#myModal">Big Data Analytics</a>
-										<small>by Mr. Erwin E. Globio</small>
-										
-									</div>
-								</div>
-								<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
-								
-								<div class="col-lg-12  bg-cert">
-									<div class="col-lg-12" >
-										<a src="img/certs/13.png"  class="large" data-toggle="modal" data-target="#myModal">Android App Development</a>
-										<small>by Mr. Erwin E. Globio</small>
-										
-									</div>
-								</div>
-								<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
-								
-								
-								<div class="col-lg-12  bg-cert">
-									<div class="col-lg-12" >
-										<a src="img/certs/12.png"  class="large" data-toggle="modal" data-target="#myModal">CC: Adobe Magic</a>
-										<small>by Mr. Rollan Banez </small>
-										
-									</div>
-								</div>
-								<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
-								
-								<div class="col-lg-12  bg-cert">
-									<div class="col-lg-12" >
-										<a src="img/certs/11.png"  class="large" data-toggle="modal" data-target="#myModal">Robotics using Arduino</a>
-										<small>by Mr. Aljabri Alam</small>
-										
-									</div>
-								</div>
-								<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
-								
-								
-								<div class="col-lg-12  bg-cert">
-									<div class="col-lg-12" >
-										<a src="img/certs/10.png"  class="large" data-toggle="modal" data-target="#myModal">On the Job Training</a>
-										<small>Dotweblabs Web Technologies</small>
-										
-									</div>
-								</div>
-								<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
-							
-							
-								<div class="col-lg-12  bg-cert">
-									<div class="col-lg-12" >
-										<a src="img/certs/9.png"  class="large" data-toggle="modal" data-target="#myModal">Adobe After Effects</a>
-										<small>by Ms. Jestine Zulaybar</small>
-										
-									</div>
-								</div>
-								<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
-								
-								
-								<div class="col-lg-12  bg-cert">
-									<div class="col-lg-12" >
-										<a src="img/certs/8.png"  class="large" data-toggle="modal" data-target="#myModal">Adobe Premiere</a>
-										<small>by by Mr. harvey Octaviano</small>
-										
-									</div>
-								</div>
-								<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
-								
-								
-								<div class="col-lg-12  bg-cert">
-									<div class="col-lg-12" >
-										<a src="img/certs/7.png"  class="large" data-toggle="modal" data-target="#myModal">Adobe After Effects</a>
-										<small>by Mr. harvey Octaviano</small>
-										
-									</div>
-								</div>
-								<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
-								
-								<div class="col-lg-12  bg-cert">
-									<div class="col-lg-12" >
-										<a src="img/certs/6.png"  class="large" data-toggle="modal" data-target="#myModal">3GS vs. Wifi</a>
-										<small>by Mr. harvey Octaviano</small>
-										
-									</div>
-								</div>
-								<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
-								
-								
-								<div class="col-lg-12  bg-cert">
-									<div class="col-lg-12" >
-										<a src="img/certs/5.png"  class="large" data-toggle="modal" data-target="#myModal">Benefits of Being a Graphic Designer</a>
-										<small>by Ms. Kamil Jade Corpuz</small>
-										
-									</div>
-								</div>
-								<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
-								
-								<div class="col-lg-12  bg-cert">
-									<div class="col-lg-12" >
-										<a src="img/certs/4.png"  class="large" data-toggle="modal" data-target="#myModal">Infographics</a>
-										<small>by Ms. Kamil Jade Corpuz</small>
-										
-									</div>
-								</div>
-								<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
-								
-								<div class="col-lg-12  bg-cert">
-									<div class="col-lg-12" >
-										<a src="img/certs/3.png"  class="large" data-toggle="modal" data-target="#myModal">Logo Making </a>
-										<small>by Ms. Kamil Jade Corpuz</small>
-										
-									</div>
-								</div>
-								<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
-								
-								<div class="col-lg-12  bg-cert">
-									<div class="col-lg-12" >
-										<a src="img/certs/2.png"  class="large" data-toggle="modal" data-target="#myModal">Vector & Vexel Art</a>
-										<small>by Ms. Kamil Jade Corpuz</small>
-										
-									</div>
-								</div>
-								<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
-								
-								
-								<div class="col-lg-12  bg-cert">
-									<div class="col-lg-12" >
-										<a src="img/certs/1.png"  class="large" data-toggle="modal" data-target="#myModal">Blender Tutorial</a>
-										<small>by Ms. Kamil Jade Corpuz</small>
-										
-									</div>
-								</div>
-								<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
-								
+								        </script>
 							</div>	<!-- end of column1 Certificates Section-->
 							<br><br><br>
 						</div>
+
 						<div class="col-lg-6 ">
 							<div class="col-lg-12  bg-light-gray ">
 									<a href="#12" class="showinfo" data-toggle="collapse"><i class="fa fa-info-circle"></i></a>
@@ -1036,6 +881,51 @@ function showPage() {
 												</div>
 											</div>
 										</div>
+
+										<div class="col-lg-12">
+										<h4 class="service-heading"> OTHER SKILLS</h4>
+									
+										</div>	
+
+										<div class="col-lg-12">
+											<p class="large">Quality Assurance Testing</p>
+											<div class="progress">
+												<div class="progress-bar" role="progressbar" aria-valuenow="30"
+												aria-valuemin="0" aria-valuemax="100" style="width:30%">
+												<span class="sr-only">30% Complete</span>
+												</div>
+											</div>
+										</div>
+
+										<div class="col-lg-12">
+											<p class="large">Teaching</p>
+											<div class="progress">
+												<div class="progress-bar" role="progressbar" aria-valuenow="60"
+												aria-valuemin="0" aria-valuemax="100" style="width:60%">
+												<span class="sr-only">60% Complete</span>
+												</div>
+											</div>
+										</div>
+
+										<div class="col-lg-12">
+											<p class="large">Sales</p>
+											<div class="progress">
+												<div class="progress-bar" role="progressbar" aria-valuenow="40"
+												aria-valuemin="0" aria-valuemax="100" style="width:40%">
+												<span class="sr-only">40% Complete</span>
+												</div>
+											</div>
+										</div>
+
+										<div class="col-lg-12">
+											<p class="large">Creatives and Designs</p>
+											<div class="progress">
+												<div class="progress-bar" role="progressbar" aria-valuenow="80"
+												aria-valuemin="0" aria-valuemax="100" style="width:80%">
+												<span class="sr-only">80% Complete</span>
+												</div>
+											</div>
+										</div>
 										
 									</div> <!-- end of progskills -->
 										
@@ -1065,21 +955,7 @@ function showPage() {
 		</section>
 		
 	<div id="portfolio" hidden>
-		<div class=" text-center bg-blue" hidden>
-				
-			 <h1 style="font-size:30px;" align="center" class="">MY PORTFOLIO</h1>
-			<p>Compilation of my ideas.</p>
-			<p class="btn btn-default btn-xs"> Graphic Design <span class="badge"> 23 </span></p> &nbsp;&nbsp;
-			<p class="btn btn-default btn-xs"> Illustration <span class="badge"> 23 </span></p> &nbsp;&nbsp;
-			<p class="btn btn-default btn-xs"> 3D Design <span class="badge"> 2 </span></p> &nbsp;&nbsp;
-			<p class="btn btn-default btn-xs"> Infographics <span class="badge"> 1 </span></p> &nbsp;&nbsp;
-			<p class="btn btn-default btn-xs"> Logo <span class="badge"> 9 </span></p> &nbsp;&nbsp;
-			<p class="btn btn-default btn-xs"> Tee Design <span class="badge"> 14 </span></p> &nbsp;&nbsp;
-			<p class="btn btn-default btn-xs"> Game Design <span class="badge"> 5 </span></p>
-			<p class="btn btn-default btn-xs"> Hand Made Design <span class="badge"> 1 </span></p>
-			<p class="btn btn-default btn-xs"> Web Designs <span class="badge"> 5 </span></p>
-			<p class="btn btn-default btn-xs"> System/Applications <span class="badge"> 5 </span></p>
-		</div>
+
 		 
 		<div  class="bg-gray">
 		
@@ -1089,18 +965,173 @@ function showPage() {
   <div class="row">
 
     <nav class="col-lg-3">
-	
       <ul class="nav nav-pills nav-stacked " data-spy="affix" data-offset-top="-5">
-        <li><p class="pic"> Graphic Design <span class="badge"> 24 </span></p></li>
-        <li><p class="pic"> Illustration <span class="badge"> 23 </span></p></li>
-        <li><p class="pic"> 3D Design <span class="badge"> 2 </span></p></li>
-        <li><p class="pic"> Infographics <span class="badge"> 1 </span></p></li>
-        <li><p class="pic"> Logo <span class="badge"> 9 </span></p></li>
-        <li><p class="pic"> Tee Design <span class="badge"> 17 </span></p></li>
-        <li><p class="pic"> Game Design <span class="badge"> 5 </span></p></li>
-        <li><p class="pic"> Hand Made Design <span class="badge"> 1 </span></p></li>
-        <li><p class="pic"> Web Designs <span class="badge"> 7 </span></p></li>
-        <li><p class="pic"> System/Applications <span class="badge"> 5 </span></p></li>
+
+      	<script>
+
+      		 var imageDisplay = ['img/lowres/3Ddesign13.jpg',
+		        'img/lowres/PRINTS25.jpg',
+		        'img/lowres/PRINTS26.jpg',
+		        'img/lowres/PRINTS27.jpg',
+
+		        'img/lowres/TEEDESIGN15.jpg',
+		        'img/lowres/TEEDESIGN16.jpg',
+		        'img/lowres/TEEDESIGN17.jpg',
+		        'img/lowres/SYSTEM1.jpg',
+
+		        'img/lowres/SYSTEM2.jpg',
+		        'img/lowres/SYSTEM3.jpg',
+		        'img/lowres/SYSTEM4.jpg',
+		        'img/lowres/SYSTEM5.jpg',
+
+		        'img/lowres/SYSTEM6.jpg',
+		        'img/lowres/SYSTEM7.jpg',
+		        'img/lowres/SYSTEM8.jpg',
+		        'img/lowres/SYSTEM9.jpg',
+
+		        'img/lowres/SYSTEM10.jpg',
+		        'img/lowres/SYSTEM11.jpg',
+		        'img/lowres/SYSTEM12.jpg',
+		        'img/lowres/CRAFTS1.jpg',
+
+		        'img/lowres/VECTOR25.jpg',
+		        'img/lowres/VECTOR24.jpg',
+		        'img/lowres/VECTOR23.jpg',
+		        'img/lowres/VECTOR22.jpg',
+
+		        'img/lowres/VECTOR21.jpg',
+		        'img/lowres/VECTOR20.jpg',
+		        'img/lowres/VECTOR19.jpg',
+		        'img/lowres/VECTOR18.jpg',
+
+		        'img/lowres/WEB5.jpg',
+		        'img/lowres/WEB4.jpg',
+		        'img/lowres/WEB3.jpg',
+		        'img/lowres/WEB2.jpg',
+
+		        'img/lowres/WEB1.jpg',
+		        'img/lowres/TEEDESIGN8.jpg',
+		        'img/lowres/TEEDESIGN9.jpg',
+		        'img/lowres/TEEDESIGN10.jpg',
+
+		        'img/lowres/TEEDESIGN11.jpg',
+		        'img/lowres/TEEDESIGN12.jpg',
+		        'img/lowres/TEEDESIGN13.jpg',
+		        'img/lowres/TEEDESIGN14.jpg',
+
+		        'img/lowres/VECTOR16.jpg',
+		        'img/lowres/PRINTS24.jpg',
+		        'img/lowres/VECTOR17.jpg',
+		        'img/lowres/PRINTS22.jpg',
+
+		        'img/lowres/PRINTS23.jpg',
+		        'img/lowres/VECTOR12.jpg',
+		        'img/lowres/VECTOR13.jpg',
+		        'img/lowres/VECTOR14.jpg',
+
+		        'img/lowres/VECTOR15.jpg',
+		        'img/lowres/PRINTS14.jpg',
+		        'img/lowres/PRINTS15.jpg',
+		        'img/lowres/PRINTS16.jpg',
+
+		        'img/lowres/PRINTS17.jpg',
+		        'img/lowres/PRINTS18.jpg',
+		        'img/lowres/PRINTS19.jpg',
+		        'img/lowres/PRINTS20.jpg',
+
+		        'img/lowres/PRINTS21.jpg',
+		        'img/lowres/VECTOR6.jpg',
+		        'img/lowres/VECTOR7.jpg',
+		        'img/lowres/PRINTS2.jpg',
+
+		        'img/lowres/3Ddesign1.jpg',
+		        'img/lowres/LOGO1.jpg',
+		        'img/lowres/LOGO2.jpg',
+		        'img/lowres/LOGO3.jpg',
+
+		        'img/lowres/PRINTS7.jpg',
+		        'img/lowres/PRINTS8.jpg',
+		        'img/lowres/VECTOR8.jpg',
+		        'img/lowres/VECTOR9.jpg',
+				
+		        'img/lowres/TEEDESIGN1.jpg',
+		        'img/lowres/LOGO4.jpg',
+		        'img/lowres/LOGO5.jpg',
+		        'img/lowres/PRINTS3.jpg',
+
+		  
+		        ];
+							   
+				var imageTitle = ['3D Design','Graphic Design','Graphic Design','Graphic Design',
+		        'Tee Design','Tee Design','Tee Design','System/Application',
+		        'System/Application','System/Application','System/Application','System/Application',
+		        'System/Application','System/Application','System/Application','System/Application',
+		        'System/Application','System/Application','System/Application','Hand Made Design',
+		        'Illustration','Illustration','Illustration','Illustration','Illustration',
+		        'Illustration','Illustration','Illustration','Illustration',
+		        'Web Design','Web Design','Web Design','Web Design',
+		        'Web Design','Tee Design','Tee Design','Tee Design',
+		        'Tee Design','Tee Design','Tee Design','Tee Design',
+				'Illustration','Infographics','Illustration','Graphic Design',
+		        '3D Design','Illustration','Illustration','Illustration','Illustration',
+		        'Graphic Design','Graphic Design','Graphic Design','Graphic Design',
+		        'Graphic Design','Graphic Design','Graphic Design','Graphic Design',
+		        'Illustration','Graphic Design','3D Design','Logo Design',
+		        'Logo Design','Logo Design','Graphic Design','Graphic Design',
+		        'Illustration','Illustration',
+
+		        'Tee Design','Logo Design','Logo Design','Graphic Design',
+
+				];	
+
+				var imageLink = ['',
+		        '','','',
+		        '','','','',
+		        '<a href="https://kamiljadecorpuz.github.io/pvr/" target="_blank" class="preview">Preview</a>',
+		        '','','',
+		        '','','','',
+		        '','','','',
+		        '','','','',
+		        '','','','',
+		        '','','','',
+		        '','','','',
+		        '','','','',
+		        '','','','',
+		        '','','','',
+		        '','<a href="http://online.fliphtml5.com/rixe/jaae/" target="_blank" class="preview">Preview</a>','','',
+		        '','<a href="http://online.fliphtml5.com/rixe/jxtl/" target="_blank" class="preview">Preview</a>','<a href="http://online.fliphtml5.com/rixe/jxtl/" target="_blank" class="preview">Preview</a>','',
+		        '<a href="http://online.fliphtml5.com/rixe/jxtl/" target="_blank" class="preview">Preview</a>','','','',
+		        '','','','',
+		        '','','','',
+		        '','','','',
+		        '','','','',
+		        '','','','',
+		        '','','','',
+	
+
+				];	
+
+
+			/*imageTitle.sort();*/
+			var current = null;
+		    var cnt = 0;
+		    for (var i = 0; i < imageTitle.length; i++) {
+		        if (imageTitle[i] != current) {
+		            if (cnt > 0) {
+		                document.write('<li><p class="pic"> '+ current +' <span class="badge">' + cnt + '</span></p></li>');
+		            }
+		            current = imageTitle[i];
+		            cnt = 1;
+		        } else {
+		            cnt++;
+		        }
+		    }
+		    if (cnt > 0) {
+		        document.write('<li><p class="pic"> '+ current +' <span class="badge">' + cnt + '</span></p></li>');
+		    }
+		</script>
+
+
         <li><small><i class="fa fa-envelope"></i>&nbsp; kamiljadecorpuz1404@gmail.com<br>
 					<i class="fa fa-phone"></i> &nbsp; (02) 618-5933 <br>
 					&nbsp;<i class="fa fa-mobile"></i> &nbsp; (+63) 926 - 319 - 7128
@@ -1122,81 +1153,26 @@ function showPage() {
 				
 				<div class="container_box">
 
-					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/3Ddesign13.jpg"><div ><p class="portfolio-tags">3D Design </p></div></div>
-
-					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/PRINTS25.jpg"><div ><p class="portfolio-tags">Graphic Design </p></div></div>
-					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/PRINTS26.jpg"><div ><p class="portfolio-tags">Graphic Design </p></div></div>
-					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/PRINTS27.jpg"><div ><p class="portfolio-tags">Graphic Design </p></div></div>
+					 <script>
+				       
 
 
-					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/TEEDESIGN15.jpg"><div ><p class="portfolio-tags">Tee Design </p></div></div>
-					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/TEEDESIGN16.jpg"><div ><p class="portfolio-tags">Tee Design </p></div></div>
-					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/TEEDESIGN17.jpg"><div ><p class="portfolio-tags">Tee Design </p></div></div>
+				        for(var i in imageDisplay ) {
+						var image = imageDisplay[i];
+						var imgtitle = imageTitle[i];
+						var imglink = imageLink[i];
 
-					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/SYSTEM12.jpg"><div ><p class="portfolio-tags">System/Application </p></div></div>
-					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/SYSTEM11.jpg"><div ><p class="portfolio-tags">System/Application </p></div></div>
-					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/SYSTEM10.jpg"><div ><p class="portfolio-tags">System/Application </p></div></div>
-					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/SYSTEM9.jpg"><div ><p class="portfolio-tags">System/Application </p></div></div>
-					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/SYSTEM8.jpg"><div ><p class="portfolio-tags">System/Application </p></div></div>
-					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/SYSTEM7.jpg"><div ><p class="portfolio-tags">System/Application </p></div></div>
-					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/SYSTEM6.jpg"><div ><p class="portfolio-tags">System/Application </p></div></div>
-					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/SYSTEM5.jpg"><div ><p class="portfolio-tags">System/Application </p></div></div>
-					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/SYSTEM4.jpg"><div ><p class="portfolio-tags">System/Application </p></div></div>
-					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/SYSTEM3.jpg"><div ><p class="portfolio-tags">System/Application </p></div></div>
-					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/SYSTEM2.jpg"><div ><p class="portfolio-tags">System/Application <a href="https://kamiljadecorpuz.github.io/pvr/" target="_blank" class="preview">Preview</a></p></div></div>
-					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/CRAFTS1.jpg"><div ><p class="portfolio-tags">Hand Made Design </p></div></div>
-					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/VECTOR25.jpg"><div ><p class="portfolio-tags">Illustration </p></div></div>
-					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/VECTOR24.jpg"><div ><p class="portfolio-tags">Illustration </p></div></div>
-					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/VECTOR23.jpg"><div ><p class="portfolio-tags">Illustration </p></div></div>
-					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/VECTOR22.jpg"><div ><p class="portfolio-tags">Illustration </p></div></div>
-					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/VECTOR21.jpg"><div ><p class="portfolio-tags">Illustration </p></div></div>
-					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/VECTOR20.jpg"><div ><p class="portfolio-tags">Illustration </p></div></div>
-					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/VECTOR19.jpg"><div ><p class="portfolio-tags">Illustration </p></div></div>
-					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/VECTOR18.jpg"><div ><p class="portfolio-tags">Illustration </p></div></div>
-					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/WEB5.jpg"><div ><p class="portfolio-tags">Web Design </p></div></div>
-					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/WEB4.jpg"><div ><p class="portfolio-tags">Web Design </p></div></div>
-					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/WEB3.jpg"><div ><p class="portfolio-tags">Web Design </p></div></div>
-					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/WEB2.jpg"><div ><p class="portfolio-tags">Web Design </p></div></div>
-					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/WEB1.jpg"><div ><p class="portfolio-tags">Web Design </p></div></div>
-					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/TEEDESIGN8.jpg"><div ><p class="portfolio-tags">Tee Design</p></div></div>
-					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/TEEDESIGN9.jpg"><div ><p class="portfolio-tags">Tee Design</p></div></div>
-					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/TEEDESIGN10.jpg"><div ><p class="portfolio-tags">Tee Design</p></div></div>
-					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/TEEDESIGN11.jpg"><div ><p class="portfolio-tags">Tee Design</p></div></div>
-					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/TEEDESIGN12.jpg"><div ><p class="portfolio-tags">Tee Design</p></div></div>
-					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/TEEDESIGN13.jpg"><div ><p class="portfolio-tags">Tee Design</p></div></div>
-					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/TEEDESIGN14.jpg"><div ><p class="portfolio-tags">Tee Design</p></div></div>
-					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/VECTOR16.jpg"><div ><p class="portfolio-tags">Illustration </p></div></div>
-					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/PRINTS24.jpg"><div ><p class="portfolio-tags">Infographics </p></div></div>
-					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/VECTOR17.jpg"><div ><p class="portfolio-tags">Illustration </p></div></div>
-					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/PRINTS22.jpg"><div ><p class="portfolio-tags">Graphic Design</p></div></div>
-					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/PRINTS23.jpg"><div ><p class="portfolio-tags">Graphics | 3D Design</p></div></div>
-					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/VECTOR12.jpg"><div ><p class="portfolio-tags">Illustration </p></div></div>
-					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/VECTOR13.jpg"><div ><p class="portfolio-tags">Illustration </p></div></div>
-					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/VECTOR14.jpg"><div ><p class="portfolio-tags">Illustration </p></div></div>
-					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/VECTOR15.jpg"><div ><p class="portfolio-tags">Illustration </p></div></div>
-					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/PRINTS14.jpg"><div ><p class="portfolio-tags">Illustration <a href="http://online.fliphtml5.com/rixe/jaae/" target="_blank" class="preview">Preview</a></p></div></div>
-					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/PRINTS15.jpg"><div ><p class="portfolio-tags">Graphic Design</p></div></div>
-					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/PRINTS16.jpg"><div ><p class="portfolio-tags">Graphic Design</p></div></div>
-					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/PRINTS17.jpg"><div ><p class="portfolio-tags">Graphic Design</p></div></div>
-					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/PRINTS18.jpg"><div ><p class="portfolio-tags">Graphic Design <a href="http://online.fliphtml5.com/rixe/jxtl/" target="_blank" class="preview">Preview</a></p></div></div>
-					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/PRINTS19.jpg"><div ><p class="portfolio-tags">Graphic Design <a href="http://online.fliphtml5.com/rixe/jxtl/" target="_blank" class="preview">Preview</a></p></div></div>
-					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/PRINTS20.jpg"><div ><p class="portfolio-tags">Graphic Design</p></div></div>
-					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/PRINTS21.jpg"><div ><p class="portfolio-tags">Graphic Design <a href="http://online.fliphtml5.com/rixe/jxtl/" target="_blank" class="preview">Preview</a></p></div></div>
-					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/VECTOR6.jpg"><div ><p class="portfolio-tags">Illustration</p></div></div>
-					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/VECTOR7.jpg"><div ><p class="portfolio-tags">Illustration</p></div></div>
-					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/PRINTS2.jpg" alt="dfvs"><div ><p  class="portfolio-tags">Graphic Design</p></div></div>
-					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/3Ddesign1.jpg"><div ><p class="portfolio-tags">3D Design</p></div></div>
-					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/LOGO1.jpg"><div ><p class="portfolio-tags">Logo | Graphic Design</p></div></div>
-					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/LOGO2.jpg"><div ><p class="portfolio-tags">Logo</p></div></div>
-					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/PRINTS7.jpg"><div ><p class="portfolio-tags">Graphic Design</p></div></div>
-					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/PRINTS8.jpg"><div ><p class="portfolio-tags">Graphic Design</p></div></div>
-					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/LOGO3.jpg"><div ><p class="portfolio-tags">Logo</p></div></div>
-					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/VECTOR8.jpg"><div ><p class="portfolio-tags">Illustration</p></div></div>
-					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/VECTOR9.jpg"><div ><p class="portfolio-tags">Illustration</p></div></div>
-					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/TEEDESIGN1.jpg"><div ><p class="portfolio-tags">Tee Design</p></div></div>
-					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/LOGO4.jpg"><div ><p class="portfolio-tags">Logo</p></div></div>
-					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/LOGO5.jpg"><div ><p class="portfolio-tags">Logo</p></div></div>
-					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/PRINTS3.jpg"><div ><p class="portfolio-tags">Graphic Design</p></div></div>
+				        document.write('<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="'+ image+'"><div><p class="portfolio-tags">'+ imgtitle + imglink +'</p></div></div>');
+						
+						}
+						
+						
+				    </script>
+
+
+	
+	
+
 					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/TEEDESIGN2.jpg"><div ><p class="portfolio-tags">Tee Design</p></div></div>
 					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/VECTOR10.jpg"><div ><p class="portfolio-tags">Illustration</p></div></div>
 					<div class="gallery_pics well_white pic"  data-toggle="modal" data-target="#myModal" ><img src="img/lowres/VECTOR11.jpg"><div ><p class="portfolio-tags">Illustration</p></div></div>
@@ -1245,8 +1221,10 @@ function showPage() {
 		
 
 		
-		<div class=" text-center bg-blue-thin" >
-		</div>
+		<!-- <div class=" text-center bg-blue-thin" ></div> -->
+		<div class=" text-center bg-orange-thin" ></div>
+
+
     <footer class="bg-footer" id="contact">
 		
         <div class="container">
