@@ -425,13 +425,15 @@ background-attachment: fixed;
 }
 
 .pic{
-opacity:0.7;
+opacity:1;
 cursor:pointer;
 }
 
 .pic:hover{
-opacity:1;
+	border: 1px solid #777777;
+    box-shadow: 1px 0.5px 1px #888888;
 }
+
 	
 	.well_plain{
 	min-height:580px;
@@ -458,10 +460,12 @@ opacity:1;
 	margin-bottom:20px;
 	background-color:#fff;
 	border:1px solid #e3e3e3;
-	 box-shadow: 0.5px 0.5px 1px #888888;
-	opacity:0.8;
+	box-shadow: 0.5px 0.5px 1px #888888;
+
 	
 	}
+
+
 	
 	.well_white_links{
 	min-height:20px;
@@ -869,6 +873,7 @@ div.container_box{
   flex-flow: row wrap; 
   display: -webkit-box;
   display: flex;
+  background-color: #f2f2f2;
  
   
 }
@@ -975,8 +980,8 @@ border: 6px #3977a2 solid;
 }
 
 .affix {
-	top: 100px;
-	left: 50px;
+	top: 80px;
+	left: 20px;
 	  
 }
   
@@ -993,5 +998,19 @@ border: 6px #3977a2 solid;
 	color:#333;
 	background-color:#333;
 }
+
+a.stackLink {
+	margin: 0 !IMPORTANT;
+    padding: 0 !IMPORTANT;
+    color: #888888;
+    cursor: pointer;
+}
+
+a.stackLink:hover {
+
+    color: #000000;
+
+}
+
 
 
