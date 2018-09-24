@@ -25,10 +25,12 @@ $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
 
-
+/*document.getElementById(GameDesign_Dev).style.display = "block !important";*/
 
 function openTab(evt, tabName) {
     var i, tabcontent, tablinks;
+
+
     tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
         tabcontent[i].style.display = "none";
@@ -39,4 +41,6 @@ function openTab(evt, tabName) {
     }
     document.getElementById(tabName).style.display = "block";
     evt.currentTarget.className += " active";
+
+
 }

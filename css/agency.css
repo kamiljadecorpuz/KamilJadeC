@@ -350,7 +350,7 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default .navbar-brand {
 	color: #d1d1d1;
-	font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif
+	font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .navbar-default .navbar-brand:hover,
@@ -1741,7 +1741,7 @@ a.stackLink:hover {
     overflow: hidden;
     border: 1px solid #ccc;
     background-color: #f1f1f1;
-    padding: 0 20%;
+    padding: 0 19%;
     border-left: none;
     border-right: none;
 }
@@ -1755,7 +1755,8 @@ a.stackLink:hover {
     cursor: pointer;
     padding: 14px 16px;
     transition: 0.3s;
-    font-size: 17px;
+    font-size: 14px;
+
 }
 
 /* Change background color of buttons on hover */
@@ -1766,6 +1767,7 @@ a.stackLink:hover {
 /* Create an active/current tablink class */
 .tab button.active {
     background-color: #ccc;
+    font-weight: 700;
 }
 
 /* Style the tab content */
@@ -1778,5 +1780,48 @@ a.stackLink:hover {
     border-right: none;
 }
 
+@media (max-width: 767px) {
+	.tabcontent {
+		padding: 2em;
+	}
+
+	.tab {
+	    padding: 1em;
+	}
+
+}
+
+@media (min-width: 768px) {
+	.tab {
+	    padding: 0 9%;
+	}
+
+}
+
+@media (min-width: 1250px) {
+	.tab {
+	    padding: 0 19%;
+	}
+
+}
 
 
+
+.profile-pic {
+	height: 40px;
+	width: 40px;
+	border-radius: 100%;
+	overflow: hidden;
+	position: absolute;
+	top: 0.5em;
+	border: 1px solid #626262;
+
+}
+
+.profile-name {
+	position: relative;
+    float: left;
+    top: 0em;
+    padding: 0;
+    padding-left: 3em;
+}

@@ -1,4 +1,19 @@
 var imageDisplay = [
+				
+
+				'img/lowres/3Ddesign14.jpg',
+				'img/lowres/PRINTS31.jpg',
+				'img/lowres/PRINTS32.jpg',
+
+
+				'img/lowres/LOGO12.jpg',
+				'img/lowres/LOGO10.jpg',
+		        'img/lowres/LOGO11.jpg',
+				'img/lowres/WEB8.jpg',
+      		 	'img/lowres/PRINTS30.jpg',
+
+      		 	'img/lowres/PRINTS29.jpg',
+      		 	'img/lowres/PRINTS28.jpg',
       		 	'img/lowres/WEB7.jpg',
       		 	'img/lowres/VECTOR5.jpg',
 		  		'img/lowres/WEB6.jpg',
@@ -134,83 +149,53 @@ var imageDisplay = [
 							   
 				var imageTitle = [
 
-				"Web Design",
-				"Illustration","Web Design",
-
-
-				"Augmented Reality","Graphic Design",
 				"3D Design","Graphic Design","Graphic Design",
 
-				"Graphic Design",
-		        "Tee Design","Tee Design","Tee Design","System/Application",
+				"Logo Design","Graphic Design","Graphic Design","Web Design","Mobile App Design",
 
+				"Mobile App Design","Mobile App Design","Web Design","Illustration","Web Development",
 
-		        "System/Application","System/Application","System/Application","System/Application",
-		        "System/Application",
+				"Augmented Reality","3D Design","Graphic Design","Graphic Design","Graphic Design",
 
-		        "System/Application","Hand Made Design",
-		        "Illustration","Illustration","Illustration",
+		        "Tee Design","Tee Design","Tee Design","System Application","System Application",
 
-		        "Illustration",
-		        "Illustration","Illustration","Illustration","Illustration",
+		        "System Application","System Application","System Application","System Application","System Application",
 
+		        "Game Design & Devt","Hand Made Design","Drawing","Drawing","Drawing",
 
-		        "Illustration","Web Design","Web Design","Web Design",
-		        "Web Design",
+		        "Drawing","Drawing","Drawing","Drawing","Illustration",
 
-		        "Web Design","Tee Design","Tee Design",
-		        "Tee Design","Tee Design",
+		        "Web Design","Web Design","Web Design","Web Design","Web Design",
 
-		        "Tee Design","Tee Design",
-		        "Illustration","Infographics","Graphic Design",
+		        "Tee Design","Tee Design","Tee Design","Tee Design","Tee Design",
 
+		        "Tee Design","Tee Design","Illustration","Infographics","Graphic Design",
 
-		        "Graphic Design","3D Design","Illustration","Illustration",
-		        "Illustration",
+		        "Graphic Design","Graphic Design","Illustration","Illustration","Drawing",
 
+		        "Illustration","Illustration","Graphic Design","Graphic Design","Graphic Design",
 
-		        "Illustration","Illustration","Graphic Design",
-		        "Graphic Design","Graphic Design",
+		        "Graphic Design","Graphic Design","Graphic Design","Graphic Design","Illustration",
 
+		        "Illustration","Graphic Design","3D Design","Logo Design","Logo Design",
 
-		        "Graphic Design","Graphic Design",
-		        "Graphic Design","Graphic Design","Illustration",
+		        "Logo Design","Graphic Design","Graphic Design","Illustration","Illustration",
 
-		        "Graphic Design","Graphic Design",
-		        "3D Design","Logo Design","Logo Design",
+		        "Tee Design","Logo Design","Logo Design","Graphic Design","Tee Design",
 
+		        "Illustration","Illustration","Game Design & Devt","Tee Design","Tee Design",
 
-		        "Logo Design",
-		        "Graphic Design","Graphic Design","Illustration","Illustration",
+		        "Logo Design","Logo Design","Logo Design","Logo Design","Graphic Design",
 
+		        "Graphic Design","Graphic Design","Tee Design","Tee Design","Tee Design",
 
-		        "Tee Design","Logo Design","Logo Design","Graphic Design",
-		        "Tee Design",
+		        "3D Design","3D Design","3D Design","3D Design","3D Design",
 
-		        "Illustration","Illustration","3D Design",
-		        "Tee Design","Tee Design",
+		        "3D Design","Game Design & Devt","Game Design & Devt", "Character Design","Character Design",
 
+		        "Graphic Design","Web Design","Web Design", "Graphic Design", "Graphic Design", 
 
-		        "Logo Design","Logo Design",
-		        "Logo Design","Logo Design","Graphic Design",
-
-
-		        "Graphic Design",
-		        "Graphic Design","Tee Design","Tee Design","Tee Design",
-
-
-		        "3D Design","3D Design","3D Design","3D Design",
-		        "3D Design",
-
-
-		        "3D Design","Game Design & Devt","Game Design & Devt",
-		        "Character Design","Character Design",
-
-		        "Graphic Design","Web Design",
-		        "Web Design", "Graphic Design", "Graphic Design", 
-
-		        "Graphic Design",
-		        "Illustration","Illustration","Illustration","Illustration",
+		        "Graphic Design","Illustration","Illustration","Illustration","Illustration",
 		       
 
 				];	
@@ -219,45 +204,54 @@ var imageDisplay = [
 
 
 				var imageLink = [
-				'',
 
-				'','<a href="https://www.skyondemand.com.ph/" target="_blank" class="preview">Preview</a>','','',
+				'','','',
 
-				'','','','',
-		        '','','','',
+				'','','','','',
 
-		        '<a href="https://kamiljadecorpuz.github.io/pvr/" target="_blank" class="preview">Preview</a>','','','',
+				'','','','','<a href="https://www.skyondemand.com.ph/" target="_blank" class="preview" title="skyondemand">Preview</a>',
 
-		        '','','','',
-		        '','','','',
-		        '','','','',
-		        '','','','',
-		        '','','','',
-		        '','','','',
-		        '','','','',
-		        '','','','',
-		        '','','','',
-
-		        '','<a href="http://online.fliphtml5.com/rixe/jaae/" target="_blank" class="preview">Preview</a>','','',
-		        '','<a href="http://online.fliphtml5.com/rixe/jxtl/" target="_blank" class="preview">Preview</a>','<a href="http://online.fliphtml5.com/rixe/jxtl/" target="_blank" class="preview">Preview</a>','',
-
-		        '<a href="http://online.fliphtml5.com/rixe/jxtl/" target="_blank" class="preview">Preview</a>','','','',
-		        '','','','',
-		        '','','','',
-		        '','','','',
-		        '','','','',
-		        '','','','',
-		        '','','','',
-				'','','','',
-				'','','','',
-				'','','','',
-				'','','','',
-
-				'','','<a href="http://online.fliphtml5.com/rixe/bgyu/" target="_blank" class="preview">Preview</a>','',
-
-				'','','','',
+				'','','','','',
 				
+				'','','','','<a href="https://kamiljadecorpuz.github.io/pvr/" target="_blank" class="preview" title="pvr">Preview</a>',
 
+				'<a href="https://kamiljadecorpuz.github.io/pvr/" target="_blank" class="preview" title="pvr">Preview</a>','','','','',
+
+				'','','','','',
+
+				'','','','','',
+
+				'','<a href="https://kamiljadecorpuz.github.io/pvr/" target="_blank" class="preview" title="pvr">Preview</a>','','','',
+
+				'','','','','',
+
+				'','','','','',
+
+				'','','','','',
+
+				'','<a href="http://online.fliphtml5.com/rixe/jaae/" target="_blank" class="preview" title="horace">Preview</a>','','','',
+
+				'','','','<a href="http://online.fliphtml5.com/rixe/jxtl/" target="_blank" class="preview" title="weblabs brochure a4">Preview</a>','',
+
+				'','','','','',
+
+				'','','','','',
+
+				'','','','','',
+
+				'','','','','',
+
+				'','','','','',
+
+				'','','','','',
+
+				'','','','','',
+
+				'','','','','',
+
+				'','','','','<a href="http://online.fliphtml5.com/rixe/bgyu/" target="_blank" class="preview" title="IT magazine">Preview</a>',
+
+				'','','','','',
 				];	
 
 
