@@ -1,5 +1,7 @@
 var imageDisplay = [
-
+				
+				'img/lowres/AR2.jpg',
+				'img/lowres/PRINTS43.jpg',
 				'img/lowres/PRINTS42.jpg',
 				'img/lowres/PRINTS41.jpg',
 				'img/lowres/3Ddesign15.jpg',
@@ -159,7 +161,7 @@ var imageDisplay = [
 							   
 				var imageTitle = [
 
-				"Graphic Design","Graphic Design","3D Design",
+				"Augmented Reality","Graphic Design","Graphic Design","Graphic Design","3D Design",
 
 				"Graphic Design","Graphic Design","Graphic Design","Graphic Design","Graphic Design",
 
