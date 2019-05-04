@@ -192,3 +192,120 @@
 					
 				
 					</div>
+
+
+
+
+					<div class="col-lg-3" hidden>	
+				<h4 class="service-heading" >Designer | Programmer | Developer</h4>
+				</div>	
+				<div class="col-lg-6">
+                   <!-- <img class="img-circle img-responsive" align="right" src="img/about/3.jpg" alt=""> -->
+                    <br><br><br>
+					<!-- <div class=" text-left well_dark" >
+					<p class="service-heading1" >Bachelor of Science in Computer Science</p>
+					<p class="service-subheading1">University of Caloocan City <br>South Campus,Metro Manila</p>
+					<hr>
+					<p class="service-heading1" >Electronics and Communication Engineering Technology</p>
+					<p class="service-subheading1">Mariano Quinto Alarilla Polytechnic College <br>Meycauayan, Bulacan</p>
+					<hr>
+					<a href="#contact" class="page-scroll btn btn-default"> Contact Me</a>	
+					</div> -->
+				</div>
+
+
+
+				<section class="bg-dots">
+			<div class="container text-center">
+				<br>
+				<div class="row">
+					<div class="col-lg-3 well_trans">
+						<span class="fa-stack fa-4x  text-orange">
+							<i class="fa fa-circle fa-stack-2x"></i>
+							<i class="fa fa-level-up fa-stack-1x fa-inverse"></i>
+						</span>
+						
+						<h4 class="service-heading">My Objectives</h4>
+						<hr class="smallHrLine" />
+						<p class="text-muted">To apply all the knowledge gained from previous experiences, to enhance my skills and decision making. Acquire more knowledge and to be tenured as well.</p>
+					</div>
+					
+					<div class="col-lg-3  well_trans">
+						<span class="fa-stack fa-4x text-orange">
+							<i class="fa fa-circle fa-stack-2x"></i>
+							<i class="fa fa-lightbulb-o fa-stack-1x fa-inverse"></i>
+						</span>
+						<h4 class="service-heading">My Creativity</h4>
+						<hr class="smallHrLine" />
+						<p class="text-muted">I like experimenting and creating something out of the box. I can make a design manually or digitally and do some related stuffs simultaneously.  </p>
+						
+					</div>
+					<div class="col-lg-3 well_trans">
+						<span class="fa-stack fa-4x text-orange">
+							<i class="fa fa-circle fa-stack-2x"></i>
+							<i class="fa fa-heart-o fa-stack-1x fa-inverse"></i>
+						</span>
+						<h4 class="service-heading">My Passion</h4>
+						<hr class="smallHrLine" />
+						<p class="text-muted">I love both programming and designing. I like showing my talents, sharing ideas and inspiring other people. I'm always expressing my unique self this way.</p>
+						
+					</div>
+					<div class="col-lg-3 well_trans">
+						<span class="fa-stack fa-4x text-orange">
+							<i class="fa fa-circle fa-stack-2x"></i>
+							<i class="fa fa-thumbs-o-up fa-stack-1x fa-inverse"></i>
+						</span>
+						<h4 class="service-heading">My Skills</h4>
+						<hr class="smallHrLine" />
+						<p class="text-muted">I'm a fast learner, eager to learn and flexible. I'm also good in marketing strategies, and had a basic knowledge in electronics and communication engineering</p>
+					
+					</div>
+					<div class="col-lg-12" hidden>
+					<br>
+					<a href="#experience" onclick="showExpe()" class="page-scroll"><button class="btn showmore">Show experiences &nbsp;<span class="caret"></span></button></a>
+					</div>
+					<br><br><br>
+				</div>
+				
+			</div>
+		</section>
+
+
+
+		'',
+
+				'','','',
+
+				'','','','',
+		        '','','','',
+
+		        '<a href="https://kamiljadecorpuz.github.io/pvr/" target="_blank" class="preview">Preview</a>','','','',
+
+		        '','','','',
+		        '','','','',
+		        '','','','',
+		        '','','','',
+		        '','','','',
+		        '','','','',
+		        '','','','',
+		        '','','','',
+		        '','','','',
+
+		        '','<a href="http://online.fliphtml5.com/rixe/jaae/" target="_blank" class="preview">Preview</a>','','',
+		        '','<a href="http://online.fliphtml5.com/rixe/jxtl/" target="_blank" class="preview">Preview</a>','<a href="http://online.fliphtml5.com/rixe/jxtl/" target="_blank" class="preview">Preview</a>','',
+
+		        '<a href="http://online.fliphtml5.com/rixe/jxtl/" target="_blank" class="preview">Preview</a>','','','',
+		        '','','','',
+		        '','','','',
+		        '','','','',
+		        '','','','',
+		        '','','','',
+		        '','','','',
+				'','','','',
+				'','','','',
+				'','','','',
+				'','','','',
+
+				'','','<a href="http://online.fliphtml5.com/rixe/bgyu/" target="_blank" class="preview">Preview</a>','',
+
+				'','','','',
