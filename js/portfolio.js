@@ -1,5 +1,9 @@
 var imageDisplay = [
 				
+				'img/lowres/TEEDESIGN21.jpg',
+				'img/lowres/TEEDESIGN20.jpg',
+				'img/lowres/TEEDESIGN19.jpg',
+
 				'img/lowres/AR2.jpg',
 				'img/lowres/PRINTS43.jpg',
 				'img/lowres/PRINTS42.jpg',
@@ -161,6 +165,9 @@ var imageDisplay = [
 							   
 				var imageTitle = [
 
+
+				"Tee Design","Tee Design","Tee Design",
+
 				"Augmented Reality","Graphic Design","Graphic Design","Graphic Design","3D Design",
 
 				"Graphic Design","Graphic Design","Graphic Design","Graphic Design","Graphic Design",
@@ -222,6 +229,8 @@ var imageDisplay = [
 				var imageLink = [
 
 				'','','',
+
+				'','','','','',
 
 				'','','','','',
 
