@@ -1,7 +1,7 @@
 var imageDisplay = [
 
-				'img/lowres/PRINTS40.jpg',
-				'img/lowres/PRINTS40.jpg',
+				'img/lowres/PRINTS42.jpg',
+				'img/lowres/PRINTS41.jpg',
 				'img/lowres/3Ddesign15.jpg',
 
 				'img/lowres/PRINTS40.jpg',
