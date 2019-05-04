@@ -1,4 +1,9 @@
 var imageDisplay = [
+
+				'img/lowres/PRINTS40.jpg',
+				'img/lowres/PRINTS40.jpg',
+				'img/lowres/3Ddesign15.jpg',
+
 				'img/lowres/PRINTS40.jpg',
 				'img/lowres/PRINTS38.jpg',
 				'img/lowres/PRINTS37.jpg',
@@ -154,6 +159,8 @@ var imageDisplay = [
 							   
 				var imageTitle = [
 
+				"Graphic Design","Graphic Design","3D Design",
+
 				"Graphic Design","Graphic Design","Graphic Design","Graphic Design","Graphic Design",
 
 				"Character Design","Character Design","3D Design","Graphic Design","Graphic Design",
@@ -211,6 +218,8 @@ var imageDisplay = [
 
 
 				var imageLink = [
+
+				'','','',
 
 				'','','','','',
 
